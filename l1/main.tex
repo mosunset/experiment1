@@ -1,0 +1,39 @@
+\documentclass[a4j,11pt]{jarticle}
+
+\title{情報学群実験第１ \LaTeX の復習}
+\author{1260277 浅野友哉}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+\section{本授業について}
+
+情報学群実験第１では、Javaというプログラミング言語を用いて、プログラミングについて更に深く学習する。シラバスに書かれている通り、具体的な目標は以下の６つである。
+\begin{enumerate}
+    \item Javaアプリケーションを作成・実行できるようになる。
+    \item 参照の概念をJavaプログラミングで実践できるようになる。
+    \item クラスの継承・オーバーロード・例外をプログラミングに活用できるようになる。
+    \item 代表的なソートアルゴリズムを理解し、プログラミングできるようになる。
+    \item 代表的なデータ構造を理解し、プログラミングできるようになる。
+    \item 小規模の仕様に基づき、完成したプログラムを構築できるようになる。
+\end{enumerate}
+\indent 本授業では、指定した教科書\cite{simplejava}に沿って授業を行う。教科書は比較的容易に記述されている。より深い学習のためには、技術的な詳細の載っている参考書を見ることも推奨する。
+
+\section{文書作成について補足}
+本文書を作成するにあたり、texファイルの１行目は
+\begin{verbatim}
+    \documentclass[a4j,11pt]{jarticle}
+\end{verbatim}
+としている。ページ幅等を合わせたい場合はそのようにすると良い。\\
+\indent また、下記の参考文献リストは\verb|thebibliography|環境を用いている。今後レポート執筆の際に利用することになるので、使い方を学習しておくこと。
+
+
+\bibliographystyle{junsrt}
+\begin{thebibliography}{99}
+\bibitem{simplejava} 中山清喬, 国本大悟著：スッキリわかる Java 入門．第3版, インプレス (2019).
+
+\end{thebibliography}
+\end{document}

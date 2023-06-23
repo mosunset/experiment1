@@ -1,0 +1,153 @@
+=== Title Only ===
+* Learning to play chess using temporal differences.
+* Temporal difference learning for heuristic search and game playing.
+* Temporal difference learning applied to game playing and the results of application to shogi.
+* Deep Blue.
+* Large-scale optimization for evaluation functions with minimax search.
+* Computer shogi.
+* An analysis of alphabeta pruning.
+* Some studies in machine learning using the game of checkers II - recent progress.
+* Xxii. programming a computer for playing chess.
+* Mastering the game of Go with deep neural networks and tree search.
+* Mastering the game of go without human knowledge.
+* Thinking fast and slow with deep learning and tree search.
+* Whole-history rating: A Bayesian rating system for players of time-varying strength.
+* Deepchess: End-to-end deep neural network for automatic learning in chess.
+* In-datacenter performance analysis of a tensor processing unit.
+* Analysis of evaluation-function learning by comparison of sibling nodes.
+* Learning to play the game of chess.
+* Bootstrapping from game tree search.
+* Searching for Solutions in Games and Artificial Intelligence.
+* Monte Carlo chess.
+* Giraffe: Using deep reinforcement learning to play chess.
+=== Sorted by Category ===
+* J. Baxter, A. Tridgell, and L. Weaver:
+  Learning to play chess using temporal differences.
+  Machine Learning, Vol. 40, No. 3, pp. 243-263 (2000).
+* Donald F. Beal and Martin C. Smith:
+  Temporal difference learning for heuristic search and game playing.
+  Inf. Sci., Vol. 122, No. 1, pp. 3-21 (2000).
+* Donald F. Beal and Martin C. Smith:
+  Temporal difference learning applied to game playing and the results of application to shogi.
+  Theoretical Computer Science, Vol. 252, pp. 105-119 (2001).
+* M. Campbell, A. J. Hoane, and F. Hsu:
+  Deep Blue.
+  Artificial Intelligence, Vol. 134, pp. 57-83 (2002).
+* Kunihito Hoki and Tomoyuki Kaneko:
+  Large-scale optimization for evaluation functions with minimax search.
+  Journal of Artificial Intelligence Research (JAIR), Vol. 49, pp. 527-568 (2014).
+* Hiroyuki Iida, Makoto Sakuta, and Jeff Rollason:
+  Computer shogi.
+  Artificial Intelligence, Vol. 134, pp. 121-144 (2002).
+* D. E. Knuth and R. W Moore:
+  An analysis of alphabeta pruning.
+  Artificial Intelligence, Vol. 6, No. 4, pp. 293-326 (1975).
+* A. L. Samuel:
+  Some studies in machine learning using the game of checkers II - recent progress.
+  IBM Journal of Research and Development, Vol. 11, No. 6, pp. 601-617 (1967).
+* Claude E Shannon:
+  Xxii. programming a computer for playing chess.
+  The London, Edinburgh, and Dublin Philosophical Magazine and Journal of Science, Vol. 41, No. 314, pp. 256-275 (1950).
+* David Silver, Aja Huang, Chris J. Maddison, Arthur Guez, Laurent Sifre, George van den Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda Panneershelvam, Marc Lanctot, Sander Dieleman, Dominik Grewe, John Nham, Nal Kalchbrenner, Ilya Sutskever, Timothy Lillicrap, Madeleine Leach, Koray Kavukcuoglu, Thore Graepel, and Demis Hassabis:
+  Mastering the game of Go with deep neural networks and tree search.
+  Nature, Vol. 529, No. 7587, pp. 484-489 (2016).
+* David Silver, Julian Schrittwieser, Karen Simonyan, Ioannis Antonoglou, Aja Huang, Arthur Guez, Thomas Hubert, Lucas Baker, Matthew Lai, Adrian Bolton, Yutian Chen, Timothy Lillicrap, Fan Hui, Laurent Sifre, George van den Driessche, Thore Graepel, and Demis Hassabis:
+  Mastering the game of go without human knowledge.
+  Nature, Vol. 550, No. 7676, pp. 354-359 (2017).
+* Thomas Anthony, Zheng Tian, and David Barber:
+  Thinking fast and slow with deep learning and tree search.
+  Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, pp. 5366-5376 (2017).
+* R. Coulom:
+  Whole-history rating: A Bayesian rating system for players of time-varying strength.
+  International Conference on Computers and Games, pp. 113-124 (2008).
+* Omid E David, Nathan S Netanyahu, and Lior Wolf:
+  Deepchess: End-to-end deep neural network for automatic learning in chess.
+  International Conference on Artificial Neural Networks, pp. 88-96 (2016).
+* Norman P. Jouppi, Cliff Young, Nishant Patil, et al:
+  In-datacenter performance analysis of a tensor processing unit.
+  Proceedings of the 44th Annual International Symposium on Computer Architecture ISCA.17, pp. 1-12 (2017).
+* Tomoyuki Kaneko and Kunihito Hoki:
+  Analysis of evaluation-function learning by comparison of sibling nodes.
+  Advances in Computer Games - 13th International Conference, ACG 2011, pp. 158-169 (2011).
+* Sebastian Thrun:
+  Learning to play the game of chess.
+  Advances in neural information processing systems, pp. 1069-1076 (1995).
+* J. Veness, D. Silver, A. Blair, and W. Uther:
+  Bootstrapping from game tree search.
+  Advances in Neural Information Processing Systems, pp. 1937-1945 (2009).
+* Victor Allis:
+  Searching for Solutions in Games and Artificial Intelligence.
+  PhD Thesis at University of Limburg, Netherlands (1994).
+* Oleg Arenz:
+  Monte Carlo chess.
+  Master's Thesis at Technische Universitat Darmstadt (2012).
+* Matthew Lai:
+  Giraffe: Using deep reinforcement learning to play chess.
+  Master's Thesis at Imperial College London (2015).
+=== Sorted by Year ===
+[Year: 2017]
+* David Silver, Julian Schrittwieser, Karen Simonyan, Ioannis Antonoglou, Aja Huang, Arthur Guez, Thomas Hubert, Lucas Baker, Matthew Lai, Adrian Bolton, Yutian Chen, Timothy Lillicrap, Fan Hui, Laurent Sifre, George van den Driessche, Thore Graepel, and Demis Hassabis:
+  Mastering the game of go without human knowledge.
+  Nature, Vol. 550, No. 7676, pp. 354-359 (2017).
+* Thomas Anthony, Zheng Tian, and David Barber:
+  Thinking fast and slow with deep learning and tree search.
+  Advances in Neural Information Processing Systems 30: Annual Conference on Neural Information Processing Systems 2017, pp. 5366-5376 (2017).
+* Norman P. Jouppi, Cliff Young, Nishant Patil, et al:
+  In-datacenter performance analysis of a tensor processing unit.
+  Proceedings of the 44th Annual International Symposium on Computer Architecture ISCA.17, pp. 1-12 (2017).
+[Year: 2016]
+* David Silver, Aja Huang, Chris J. Maddison, Arthur Guez, Laurent Sifre, George van den Driessche, Julian Schrittwieser, Ioannis Antonoglou, Veda Panneershelvam, Marc Lanctot, Sander Dieleman, Dominik Grewe, John Nham, Nal Kalchbrenner, Ilya Sutskever, Timothy Lillicrap, Madeleine Leach, Koray Kavukcuoglu, Thore Graepel, and Demis Hassabis:
+  Mastering the game of Go with deep neural networks and tree search.
+  Nature, Vol. 529, No. 7587, pp. 484-489 (2016).
+* Omid E David, Nathan S Netanyahu, and Lior Wolf:
+  Deepchess: End-to-end deep neural network for automatic learning in chess.
+  International Conference on Artificial Neural Networks, pp. 88-96 (2016).
+[Year: 2015]
+* Matthew Lai:
+  Giraffe: Using deep reinforcement learning to play chess.
+  Master's Thesis at Imperial College London (2015).
+[Year: 2014]
+* Kunihito Hoki and Tomoyuki Kaneko:
+  Large-scale optimization for evaluation functions with minimax search.
+  Journal of Artificial Intelligence Research (JAIR), Vol. 49, pp. 527-568 (2014).
+[Year: 2013]
+[Year: 2012]
+* Oleg Arenz:
+  Monte Carlo chess.
+  Master's Thesis at Technische Universitat Darmstadt (2012).
+[Year: 2011]
+* Tomoyuki Kaneko and Kunihito Hoki:
+  Analysis of evaluation-function learning by comparison of sibling nodes.
+  Advances in Computer Games - 13th International Conference, ACG 2011, pp. 158-169 (2011).
+[Year: 2010]
+[Year: 2009]
+* J. Veness, D. Silver, A. Blair, and W. Uther:
+  Bootstrapping from game tree search.
+  Advances in Neural Information Processing Systems, pp. 1937-1945 (2009).
+[Year: 2008]
+* R. Coulom:
+  Whole-history rating: A Bayesian rating system for players of time-varying strength.
+  International Conference on Computers and Games, pp. 113-124 (2008).
+[Year: 2007]
+[Year: 2006]
+[Year: 2005]
+[Year: 2004]
+[Year: 2003]
+[Year: 2002]
+* M. Campbell, A. J. Hoane, and F. Hsu:
+  Deep Blue.
+  Artificial Intelligence, Vol. 134, pp. 57-83 (2002).
+* Hiroyuki Iida, Makoto Sakuta, and Jeff Rollason:
+  Computer shogi.
+  Artificial Intelligence, Vol. 134, pp. 121-144 (2002).
+[Year: 2001]
+* Donald F. Beal and Martin C. Smith:
+  Temporal difference learning applied to game playing and the results of application to shogi.
+  Theoretical Computer Science, Vol. 252, pp. 105-119 (2001).
+[Year: 2000]
+* J. Baxter, A. Tridgell, and L. Weaver:
+  Learning to play chess using temporal differences.
+  Machine Learning, Vol. 40, No. 3, pp. 243-263 (2000).
+* Donald F. Beal and Martin C. Smith:
+  Temporal difference learning for heuristic search and game playing.
+  Inf. Sci., Vol. 122, No. 1, pp. 3-21 (2000).

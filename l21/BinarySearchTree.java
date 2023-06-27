@@ -106,7 +106,6 @@ public class BinarySearchTree {
         bf.append(showSubTree(localNode.getRight(), counter + 1));
 
         align(bf, counter);
-        bf.append(counter + ":");
         bf.append(localNode.getData().toString());
         bf.append("\n");
 
@@ -119,6 +118,7 @@ public class BinarySearchTree {
         for (int i = 0; i < counter; i++) {
             bf.append("  ");
         }
+        bf.append(counter + ":");
     }
 
 }

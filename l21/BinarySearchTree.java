@@ -1,5 +1,3 @@
-import java.time.LocalDate;
-
 public class BinarySearchTree {
     private MyNode root;
 

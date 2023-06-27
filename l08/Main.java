@@ -1,5 +1,3 @@
-package l8;
-
 public class Main {
     public static void main(String[] args) {
         Sword s = new Sword();

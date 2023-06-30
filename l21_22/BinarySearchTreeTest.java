@@ -9,28 +9,23 @@ public class BinarySearchTreeTest {
         tree.insert(new MyData(30, "strawberry"));
         tree.insert(new MyData(22, "lemon"));
         tree.insert(new MyData(36, "pear"));
+        tree.printRoot();
 
-        tree.printRoot();
+        // // 葉ノードを削除
+        // tree.remove(new MyData(14, "banana"));
+        // tree.printRoot();
+        // // 子を持つノードの削除
+        // tree.remove(new MyData(20, "orange"));
+        // tree.printRoot();
+        // // ルートノードを削除
+        // tree.remove(new MyData(29, "apple"));
+        // tree.printRoot();
+
+        // System.out.println(tree.search(new MyData(22, "lemon")));
+        // System.out.println(tree.search(new MyData(5, "five")));
+
         System.out.println();
-        tree.showTree();
-        System.out.println();
-        // 葉ノードを削除
-        tree.remove(new MyData(14, "banana"));
-        tree.printRoot();
-        System.out.println();
-        tree.showTree();
-        System.out.println();
-        // 子を持つノードの削除
-        tree.remove(new MyData(20, "orange"));
-        tree.printRoot();
-        System.out.println();
-        tree.showTree();
-        System.out.println();
-        // ルートノードを削除
-        tree.remove(new MyData(29, "apple"));
-        tree.printRoot();
-        System.out.println();
-        tree.showTree();
-        System.out.println();
+        System.out.println("PrintTreeInOrder");
+        tree.printTreeInOrder();
     }
 }

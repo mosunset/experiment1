@@ -235,4 +235,165 @@ public class BinarySearchTree {
         return true;
     }
 
+    public MyNode search(MyData aData) {
+        // 木が空であるか調べる
+        if (this.root == null) {
+            // 木が空なので，null を返し処理を抜ける
+            return null;
+        }
+        // 木をたどって対象のノードを探す
+        MyNode currentNode = this.root;
+        while (true) {
+            // 対象のノードであるか判定する
+            if (currentNode.getData().compareTo(aData) == 0) {
+                // 対象のノードなのでノードを返して処理を抜ける
+                return currentNode;
+            } // データを左の子ノードに探索するべきか右の子ノードに探索するべきか調べる
+            if (currentNode.getData().compareTo(aData) > 0) {
+                // 左に子ノードがあるか調べる
+                if (currentNode.getLeft() == null) {
+                    return null;// 該当する子ノードがない
+                }
+                currentNode = currentNode.getLeft();
+            } else {
+                // 右に子ノードがあるか調べる
+                if (currentNode.getRight() == null) {
+                    return null;// 該当する子ノードがない
+                }
+                currentNode = currentNode.getRight();
+            }
+        }
+    }
+
+    // 間順走査
+    public void printTreeInOrder() {
+        System.out.println(this.traverseInOrder(this.root));
+    }
+
+    private String traverseInOrder(MyNode localNode) {
+        // ノードが null であるか調べる（基底条件）
+        if (localNode == null) {
+            return ""; // ノードが null なので空文字列を返し処理を抜ける
+        }
+        // 木の文字列表現を取得する
+        StringBuffer tr = new StringBuffer();
+        // 左の子ノードの文字列表現を取得する
+        tr.append(this.traverseInOrder(localNode.getLeft()));
+        // 本ノードの文字列表現を取得する
+        tr.append(localNode + "\n");
+        // 右の子ノードの文字列表現を取得する
+        tr.append(this.traverseInOrder(localNode.getRight()));
+        return tr.toString(); // trはStringBuffer
+    }
+
+    // Lesson22_1
+    public void printTreePreOrder() {
+        System.out.println(this.traversePreOrder(this.root));
+    }
+
+    // 前順走査
+    private String traversePreOrder(MyNode localNode) {
+        // ノードが null であるか調べる（基底条件）
+        if (localNode == null) {
+            return ""; // ノードが null なので空文字列を返し処理を抜ける
+        }
+        // 木の文字列表現を取得する
+        StringBuffer tr = new StringBuffer();
+        // 本ノードの文字列表現を取得する
+        tr.append(localNode + "\n");
+        // 左の子ノードの文字列表現を取得する
+        tr.append(this.traversePreOrder(localNode.getLeft()));
+        // 右の子ノードの文字列表現を取得する
+        tr.append(this.traversePreOrder(localNode.getRight()));
+        return tr.toString(); // trはStringBuffer
+    }
+
+    public void printTreePostOrder() {
+        System.out.println(this.traversePostOrder(this.root));
+    }
+
+    // 後順走査
+    private String traversePostOrder(MyNode localNode) {
+        // ノードが null であるか調べる（基底条件）
+        if (localNode == null) {
+            return ""; // ノードが null なので空文字列を返し処理を抜ける
+        }
+        // 木の文字列表現を取得する
+        StringBuffer tr = new StringBuffer();
+        // 左の子ノードの文字列表現を取得する
+        tr.append(this.traversePostOrder(localNode.getLeft()));
+        // 右の子ノードの文字列表現を取得する
+        tr.append(this.traversePostOrder(localNode.getRight()));
+        // 本ノードの文字列表現を取得する
+        tr.append(localNode + "\n");
+
+        return tr.toString(); // trはStringBuffer
+    }
+
+    public void printTreeDesc() {
+        System.out.println(this.traverseDesk(this.root));
+    }
+
+    // idの順番
+    private String traverseDesk(MyNode localNode) {
+        // ノードが null であるか調べる（基底条件）
+        if (localNode == null) {
+            return ""; // ノードが null なので空文字列を返し処理を抜ける
+        }
+        // 木の文字列表現を取得する
+        StringBuffer tr = new StringBuffer();
+        // 右の子ノードの文字列表現を取得する
+        tr.append(this.traverseDesk(localNode.getRight()));
+        // 本ノードの文字列表現を取得する
+        tr.append(localNode + "\n");
+        // 左の子ノードの文字列表現を取得する
+        tr.append(this.traverseDesk(localNode.getLeft()));
+
+        return tr.toString(); // trはStringBuffer
+    }
+
+    // Lesson22_2
+    public void removeLevel(int level) {
+        removeSubLevel(this.root, level);
+    }
+
+    private void removeSubLevel(MyNode myNode, int level) {
+        if (myNode == null) {
+            return;
+        }
+
+        if (level == 0) {
+            remove(myNode.getData());
+            return;
+        }
+        removeSubLevel(myNode.getRight(), level - 1);
+        removeSubLevel(myNode.getLeft(), level - 1);
+
+    }
+
+    // Lesson22_3
+    // 引数 aData で指定されたノードをルートとする部分木を返す．なお，元の木からその部分木を削除する
+    public BinarySearchTree cutTree(MyData aData) {
+        BinarySearchTree temp = new BinarySearchTree();
+        MyNode node = search(aData);
+        if (node == null) {
+            return temp;
+        }
+        this.copy(temp, node);
+        node.setLeft(null);
+        node.setRight(null);
+        remove(aData);
+        return temp;
+    }
+
+    // 引数 myNode で渡されたノードを新しく根として引数 tree に追加し，
+    // 引数 myNode で渡されたノードより下に連結されているノードがあれば新しく引数 tree に追加する.
+    private void copy(BinarySearchTree tree, MyNode myNode) {
+        if (myNode == null) {
+            return;
+        }
+        tree.insert(myNode.getData());
+        copy(tree, myNode.getRight());
+        copy(tree, myNode.getLeft());
+    }
 }

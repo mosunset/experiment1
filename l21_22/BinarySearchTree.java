@@ -97,7 +97,7 @@ public class BinarySearchTree {
         System.out.println(showSubTree(root, 0));
     }
 
-    public String showSubTree(MyNode localNode, int counter) {
+    private String showSubTree(MyNode localNode, int counter) {
         if (localNode == null) {
             return "";
         }
@@ -116,7 +116,7 @@ public class BinarySearchTree {
 
     private void align(StringBuffer bf, int counter) {
         for (int i = 0; i < counter; i++) {
-            bf.append("  ");
+            bf.append("   ");
         }
         bf.append(counter + ":");
     }

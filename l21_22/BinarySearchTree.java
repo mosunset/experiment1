@@ -375,14 +375,14 @@ public class BinarySearchTree {
     // 引数 aData で指定されたノードをルートとする部分木を返す．なお，元の木からその部分木を削除する
     public BinarySearchTree cutTree(MyData aData) {
         BinarySearchTree temp = new BinarySearchTree();
-        MyNode node = search(aData);
+        MyNode node = this.search(aData);
         if (node == null) {
             return temp;
         }
         this.copy(temp, node);
         node.setLeft(null);
         node.setRight(null);
-        remove(aData);
+        this.remove(aData);
         return temp;
     }
 

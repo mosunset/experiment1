@@ -28,12 +28,13 @@ public class AddressData {
     }
 
     public String getAddress() {
-        return this.city + ", " + this.metropolice + ", "
+        return this.metropolice + ", " + this.city + ", "
                 + this.zipcode;
     }
 
     public String toString() {
-        return this.name + ": " + this.city + ", "
-                + this.metropolice + ", " + this.zipcode;
+        return this.name + ": " + this.metropolice + ", "
+                + this.city + ", " + this.zipcode;
     }
+
 }

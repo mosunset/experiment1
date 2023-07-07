@@ -22,6 +22,11 @@ public class MyHashtable {
         if (null == anAddressData) {
             return false; // データがnull
         }
+        if (this.table[this.calculateHashCode(anAddressData.getName())] == null) {
+            elementNum++;
+        } else {
+            collision++;
+        }
         this.table[this.calculateHashCode(anAddressData.getName())] = anAddressData;
         return true;
     }
@@ -37,6 +42,9 @@ public class MyHashtable {
     public boolean remove(String aKey) {
         if (null == aKey) {
             return false;
+        }
+        if (this.table[this.calculateHashCode(aKey)] != null) {
+            elementNum--;
         }
         this.table[this.calculateHashCode(aKey)] = null;
         return true;
@@ -55,5 +63,40 @@ public class MyHashtable {
         }
         // 合計値からハッシュ値を求める
         return intKey % this.table.length;
+    }
+
+    // lesson24_1
+    private int elementNum;
+
+    public int getElementNum() {
+        return elementNum;
+    }
+
+    public void clear() {
+        for (int i = 0; i < this.table.length; i++) {
+            this.table[i] = null;
+        }
+        elementNum = 0;
+    }
+
+    // lesson24_2
+    private int collision;
+
+    public int getCollision() {
+        return collision;
+    }
+
+    // lesson24_3
+    public void exists(String aKey) {
+        if (aKey == null) {
+            System.out.println("Key is null.");
+        } else if (get(aKey) == null) {
+            System.out.println(aKey + "\tdoes not exist.");
+        } else if (get(aKey).getName().equals(aKey)) {
+            System.out.println(aKey + "\texist.");
+            System.out.println(get(aKey));
+        } else {
+            System.out.println(aKey + "\tdoes not exist.");
+        }
     }
 }

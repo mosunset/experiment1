@@ -1,19 +1,19 @@
-class ShellSort {
+public class OriginalShellSort {
     private int[] sort_array;
 
-    private ShellSort() {
-
+    private OriginalShellSort() {
     }
 
-    public ShellSort(int[] sort_array) {
+    public OriginalShellSort(int[] sort_array) {
         this.sort_array = sort_array;
     }
 
-    public void shellSort() {
+    // Lesson26_1
+    public void originalShellSort() {
         int in, out, temp, h;
-        h = 1;
-        while (h < this.sort_array.length / 3) {
-            h = h * 3 + 1;// Kunth's interval sequence
+        h = this.sort_array.length / 2;
+        while (h < this.sort_array.length / 2) {
+            h = 2 * h;
         }
         while (h > 0) {
             // 動作確認用 System.out.println("H = " + h);
@@ -31,7 +31,7 @@ class ShellSort {
                 // 経過を表示
                 //this.display(sort_array);
             }
-            h = (h - 1) / 3; // Kunth's interval sequence
+            h = h / 2;
         }
     }
 
@@ -65,6 +65,7 @@ class ShellSort {
         }
         return true;
     }
+
     // Lesson26_3
 
     private long timeStart;
@@ -84,8 +85,9 @@ class ShellSort {
 
     public void display(int[] array) {
         for (int element : array) {
-            System.out.printf("%3d",element);
+            System.out.printf("%3d", element);
         }
         System.out.println();
     }
+
 }

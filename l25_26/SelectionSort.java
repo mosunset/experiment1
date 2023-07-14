@@ -27,8 +27,7 @@ public class SelectionSort {
                 }
             }
             this.swap(out, min);
-            // 経過を表示
-            // display(sort_array);
+            // 経過を表示 SortTest.display();
         }
     }
 
@@ -68,14 +67,6 @@ public class SelectionSort {
     // // display(sort_array);
     // }
     // }
-
-    // 途中経過表示
-    public static void display(int[] array) {
-        for (int element : array) {
-            System.out.printf("%4d", element);
-        }
-        System.out.println();
-    }
 
     public boolean checkSort() {
         for (int i = 0; i < this.sort_array.length - 1; i++) {

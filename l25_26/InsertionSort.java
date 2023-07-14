@@ -1,51 +1,47 @@
-public class BubbleSort {
-    // フィールド
+public class InsertionSort {
     private int[] sort_array;
 
-    // コンストラクタ
-    private BubbleSort() {
+    private InsertionSort() {
     }
 
-    public BubbleSort(int[] sort_array) {
-        this.sort_array = sort_array;
+    public InsertionSort(int[] array) {
+        this.sort_array = array;
     }
 
-    public void swap(int x, int y) {
+    private void swap(int x, int y) {
         assignCount += 3;
         int temp = this.sort_array[x];
         this.sort_array[x] = this.sort_array[y];
         this.sort_array[y] = temp;
     }
 
-    public void bubbleSort() {
-        for (int i = this.sort_array.length - 1; i > 0; i--) {
-            for (int j = 0; j < i; j++) {
-                if (this.compareValue(this.sort_array[j], this.sort_array[j + 1]) == -1) {
-                    this.swap(j, j + 1);
-                    // 経過を表示
-                    // display(sort_array);
-                }
+    // Lesson25_1
+    public void insertionSort() {
+        for (int i = 1; i < this.sort_array.length; i++) {
+            int key = this.sort_array[i];
+            int j = i - 1;
+
+            while (j >= 0 && this.compareValue(this.sort_array[j] , key) == -1) {
+                this.swap(j, j + 1);
+                j--;
             }
+
+            this.sort_array[j + 1] = key;
+            // 経過を表示 SortTest.display();
         }
     }
 
-    // 途中経過表示
-    public static void display(int[] array) {
-        for (int element : array) {
-            System.out.print(element + " ");
-        }
-        System.out.println();
-    }
-
+    // Lesson25_2
     public boolean checkSort() {
         for (int i = 0; i < this.sort_array.length - 1; i++) {
             if (this.sort_array[i] > this.sort_array[i + 1]) {
                 return false;
             }
         }
-
         return true;
     }
+
+    // Lesson25_3
 
     protected long timeStart;
     protected long timeStop;
@@ -62,6 +58,7 @@ public class BubbleSort {
         return timeStop - timeStart;
     }
 
+    // Lesson25_4
     protected int assignCount;
     protected int compareCount;
 
@@ -82,4 +79,5 @@ public class BubbleSort {
     public int getCompareCount() {
         return compareCount;
     }
+
 }

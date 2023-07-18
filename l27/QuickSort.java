@@ -8,7 +8,7 @@ class QuickSort {
         this.sort_array = sort_array;
     }
 
-    public void swap(int i, int j){
+    public void swap(int i, int j) {
         int temp = this.sort_array[i];
         this.sort_array[i] = this.sort_array[j];
         this.sort_array[j] = temp;
@@ -22,10 +22,10 @@ class QuickSort {
         if (from >= to)
             return;// 基底条件(base case)
         int pivot = this.sort_array[(from + to) / 2];
-        // System.out.print("pivot = " + pivote);//動作確認用
+        // System.out.print("pivot = " + pivot); // 動作確認用
         int left = from;
         int right = to;
-        // System.out.println(", from = "+from+", to = " + to);//動作確認用
+        // System.out.println(", from = "+from+", to " + to); // 動作確認用
         while (left <= right) {
             while (this.sort_array[left] < pivot)
                 left++;
@@ -33,7 +33,7 @@ class QuickSort {
                 right--;
             if (left <= right) {
                 this.swap(left, right);
-                // SortTest.dispaly(sort_array);//経過の表示
+                // SortTest.display(sort_array); // 経過の表示
                 left++;
                 right--;
             }

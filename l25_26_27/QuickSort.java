@@ -9,6 +9,7 @@ class QuickSort {
     }
 
     public void swap(int i, int j) {
+        assignCount += 3;
         int temp = this.sort_array[i];
         this.sort_array[i] = this.sort_array[j];
         this.sort_array[j] = temp;
@@ -28,10 +29,10 @@ class QuickSort {
         int right = to;
         // System.out.println(", from = "+from+", to " + to); // 動作確認用
         while (left <= right) {
-            while (this.sort_array[left] < pivot) {
+            while (this.compareValue(this.sort_array[left], pivot) == -1) {
                 left++;
             }
-            while (this.sort_array[right] > pivot) {
+            while (this.compareValue(this.sort_array[right], pivot) == 1) {
                 right--;
             }
             if (left <= right) {
@@ -59,9 +60,9 @@ class QuickSort {
 
     private int compareValue(int n1, int n2) {
         compareCount++;
-        if (n1 < n2) {
+        if (n1 > n2) {
             return 1;
-        } else if (n1 > n2) {
+        } else if (n1 < n2) {
             return -1;
         }
         return 0;

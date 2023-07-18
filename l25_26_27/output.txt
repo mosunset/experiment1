@@ -1,0 +1,1793 @@
+配列の要素数: 100
+閾値: 2 === random     =============================
+	assignCount:   521
+	compareCount:  726
+	average time:  0.011377331999999983[ms]
+閾値: 3 === random     =============================
+	assignCount:   525
+	compareCount:  711
+	average time:  0.010456719999999989[ms]
+閾値: 4 === random     =============================
+	assignCount:   526
+	compareCount:  692
+	average time:  0.0063169670000000075[ms]
+閾値: 5 === random     =============================
+	assignCount:   532
+	compareCount:  677
+	average time:  0.006379954999999997[ms]
+閾値: 6 === random     =============================
+	assignCount:   545
+	compareCount:  674
+	average time:  0.006416007000000012[ms]
+閾値: 7 === random     =============================
+	assignCount:   544
+	compareCount:  673
+	average time:  0.005064064999999997[ms]
+閾値: 8 === random     =============================
+	assignCount:   573
+	compareCount:  669
+	average time:  0.002055996000000003[ms]
+閾値: 9 === random     =============================
+	assignCount:   573
+	compareCount:  669
+	average time:  0.002824565999999995[ms]
+閾値: 10 === random     =============================
+	assignCount:   577
+	compareCount:  667
+	average time:  0.0020191800000000006[ms]
+閾値: 11 === random     =============================
+	assignCount:   577
+	compareCount:  667
+	average time:  0.0021966459999999983[ms]
+閾値: 12 === random     =============================
+	assignCount:   593
+	compareCount:  680
+	average time:  0.0021298549999999986[ms]
+閾値: 13 === random     =============================
+	assignCount:   597
+	compareCount:  682
+	average time:  0.001998870999999997[ms]
+閾値: 14 === random     =============================
+	assignCount:   597
+	compareCount:  682
+	average time:  0.0030416049999999993[ms]
+閾値: 15 === random     =============================
+	assignCount:   605
+	compareCount:  675
+	average time:  0.002004953999999999[ms]
+閾値: 16 === random     =============================
+	assignCount:   653
+	compareCount:  714
+	average time:  0.0022045509999999977[ms]
+閾値: 17 === random     =============================
+	assignCount:   653
+	compareCount:  714
+	average time:  0.0021046409999999974[ms]
+閾値: 18 === random     =============================
+	assignCount:   696
+	compareCount:  742
+	average time:  0.0036821649999999972[ms]
+閾値: 19 === random     =============================
+	assignCount:   723
+	compareCount:  755
+	average time:  0.003130964999999999[ms]
+閾値: 20 === random     =============================
+	assignCount:   735
+	compareCount:  748
+	average time:  0.0037484010000000045[ms]
+閾値: 21 === random     =============================
+	assignCount:   735
+	compareCount:  748
+	average time:  0.002248931999999999[ms]
+閾値: 22 === random     =============================
+	assignCount:   750
+	compareCount:  745
+	average time:  0.0026001219999999994[ms]
+閾値: 23 === random     =============================
+	assignCount:   778
+	compareCount:  763
+	average time:  0.0027297489999999988[ms]
+閾値: 24 === random     =============================
+	assignCount:   778
+	compareCount:  763
+	average time:  0.002262873000000004[ms]
+閾値: 25 === random     =============================
+	assignCount:   778
+	compareCount:  763
+	average time:  0.0037595959999999987[ms]
+閾値: 26 === random     =============================
+	assignCount:   778
+	compareCount:  763
+	average time:  0.003391424999999999[ms]
+閾値: 27 === random     =============================
+	assignCount:   778
+	compareCount:  763
+	average time:  0.0022625460000000007[ms]
+閾値: 28 === random     =============================
+	assignCount:   778
+	compareCount:  763
+	average time:  0.0070593240000000005[ms]
+閾値: 29 === random     =============================
+	assignCount:   778
+	compareCount:  763
+	average time:  0.002227190000000001[ms]
+閾値: 30 === random     =============================
+	assignCount:   912
+	compareCount:  874
+	average time:  0.002702612[ms]
+閾値: 31 === random     =============================
+	assignCount:   912
+	compareCount:  874
+	average time:  0.002646703000000003[ms]
+閾値: 32 === random     =============================
+	assignCount:   912
+	compareCount:  874
+	average time:  0.0025479190000000053[ms]
+閾値: 33 === random     =============================
+	assignCount:   912
+	compareCount:  874
+	average time:  0.002811342[ms]
+閾値: 34 === random     =============================
+	assignCount:   912
+	compareCount:  874
+	average time:  0.0025459520000000006[ms]
+閾値: 35 === random     =============================
+	assignCount:   912
+	compareCount:  874
+	average time:  0.002542465000000002[ms]
+閾値: 36 === random     =============================
+	assignCount:   912
+	compareCount:  874
+	average time:  0.005215634000000001[ms]
+閾値: 37 === random     =============================
+	assignCount:   912
+	compareCount:  874
+	average time:  0.002483917999999999[ms]
+閾値: 38 === random     =============================
+	assignCount:   912
+	compareCount:  874
+	average time:  0.0025663770000000042[ms]
+閾値: 39 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.004373473000000009[ms]
+閾値: 40 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0025554400000000004[ms]
+閾値: 41 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0026112670000000035[ms]
+閾値: 42 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.003945879999999997[ms]
+閾値: 43 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.002670217000000006[ms]
+閾値: 44 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0028255140000000025[ms]
+閾値: 45 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0027325530000000026[ms]
+閾値: 46 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.003432707000000002[ms]
+閾値: 47 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0024931909999999953[ms]
+閾値: 48 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0029611829999999987[ms]
+閾値: 49 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0029759000000000022[ms]
+閾値: 50 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.002697896999999999[ms]
+閾値: 51 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.002808568000000003[ms]
+閾値: 52 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.002712442000000001[ms]
+閾値: 53 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0025906059999999983[ms]
+閾値: 54 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.002538251[ms]
+閾値: 55 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0033211099999999978[ms]
+閾値: 56 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.002605189999999999[ms]
+閾値: 57 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.002601272[ms]
+閾値: 58 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0024592150000000024[ms]
+閾値: 59 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0025537150000000007[ms]
+閾値: 60 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0025155289999999977[ms]
+閾値: 61 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0035775709999999994[ms]
+閾値: 62 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.005342565[ms]
+閾値: 63 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0024260370000000024[ms]
+閾値: 64 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0028897229999999994[ms]
+閾値: 65 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0032133780000000015[ms]
+閾値: 66 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.003843269000000003[ms]
+閾値: 67 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0025944760000000057[ms]
+閾値: 68 === random     =============================
+	assignCount:   1006
+	compareCount:  953
+	average time:  0.0032354679999999987[ms]
+閾値: 69 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.005942005999999996[ms]
+閾値: 70 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.003869223999999997[ms]
+閾値: 71 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.0068527449999999995[ms]
+閾値: 72 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.003852959000000002[ms]
+閾値: 73 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.009009268[ms]
+閾値: 74 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.003857208999999999[ms]
+閾値: 75 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.004208905000000004[ms]
+閾値: 76 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.0073284359999999955[ms]
+閾値: 77 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.009027797999999998[ms]
+閾値: 78 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.0037566649999999984[ms]
+閾値: 79 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.0038577020000000006[ms]
+閾値: 80 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.0038047669999999967[ms]
+閾値: 81 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.005348718999999997[ms]
+閾値: 82 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.003976431000000004[ms]
+閾値: 83 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.006513427000000001[ms]
+閾値: 84 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.0038254680000000016[ms]
+閾値: 85 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.003860538999999998[ms]
+閾値: 86 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.004322919000000004[ms]
+閾値: 87 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.0037950829999999973[ms]
+閾値: 88 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.006253986000000003[ms]
+閾値: 89 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.006447608999999989[ms]
+閾値: 90 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.0038397110000000035[ms]
+閾値: 91 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.005817185999999985[ms]
+閾値: 92 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.003924282000000001[ms]
+閾値: 93 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.003835987[ms]
+閾値: 94 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.010416125999999996[ms]
+閾値: 95 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.005360618999999999[ms]
+閾値: 96 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.0043649450000000055[ms]
+閾値: 97 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.003930201000000001[ms]
+閾値: 98 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.005401938[ms]
+閾値: 99 === random     =============================
+	assignCount:   1534
+	compareCount:  1462
+	average time:  0.0038212579999999945[ms]
+閾値: 100 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005847909000000006[ms]
+閾値: 101 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005806833999999999[ms]
+閾値: 102 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.007617968000000001[ms]
+閾値: 103 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005997553999999996[ms]
+閾値: 104 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005924600999999999[ms]
+閾値: 105 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005762258000000007[ms]
+閾値: 106 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.006051477[ms]
+閾値: 107 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005883133000000004[ms]
+閾値: 108 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005889127999999998[ms]
+閾値: 109 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.006429881000000004[ms]
+閾値: 110 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.006001932000000003[ms]
+閾値: 111 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005802836000000009[ms]
+閾値: 112 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005947840999999997[ms]
+閾値: 113 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.00744336900000001[ms]
+閾値: 114 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.007310126999999998[ms]
+閾値: 115 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.006086637000000005[ms]
+閾値: 116 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.006003770000000005[ms]
+閾値: 117 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005833889[ms]
+閾値: 118 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.008287009999999997[ms]
+閾値: 119 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005865230999999997[ms]
+閾値: 120 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005869496999999999[ms]
+閾値: 121 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005808697000000005[ms]
+閾値: 122 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.008258135000000015[ms]
+閾値: 123 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005925556[ms]
+閾値: 124 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005796927[ms]
+閾値: 125 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.006145346[ms]
+閾値: 126 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.006137309000000004[ms]
+閾値: 127 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.008007999999999986[ms]
+閾値: 128 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.0063584209999999995[ms]
+閾値: 129 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.007330973[ms]
+閾値: 130 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.0074157399999999945[ms]
+閾値: 131 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.006179522999999999[ms]
+閾値: 132 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.0067482400000000034[ms]
+閾値: 133 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.007055219000000011[ms]
+閾値: 134 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005915483[ms]
+閾値: 135 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.006112854999999999[ms]
+閾値: 136 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.008418648000000015[ms]
+閾値: 137 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005898349999999995[ms]
+閾値: 138 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005791850999999995[ms]
+閾値: 139 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.007810935000000004[ms]
+閾値: 140 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.00677458500000001[ms]
+閾値: 141 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005745035999999998[ms]
+閾値: 142 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.007689347000000006[ms]
+閾値: 143 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.0060108980000000084[ms]
+閾値: 144 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.007996515999999993[ms]
+閾値: 145 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.006151658[ms]
+閾値: 146 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.012440346000000005[ms]
+閾値: 147 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.010048491999999994[ms]
+閾値: 148 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.005939165000000002[ms]
+閾値: 149 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.007765336999999991[ms]
+閾値: 150 === random     =============================
+	assignCount:   2557
+	compareCount:  2455
+	average time:  0.006912157000000011[ms]
+
+配列の要素数: 1000
+閾値: 2 === random     =============================
+	assignCount:   7725
+	compareCount:  12778
+	average time:  0.06840015699999999[ms]
+閾値: 3 === random     =============================
+	assignCount:   7724
+	compareCount:  12558
+	average time:  0.07056837499999989[ms]
+閾値: 4 === random     =============================
+	assignCount:   7738
+	compareCount:  12348
+	average time:  0.06362731899999997[ms]
+閾値: 5 === random     =============================
+	assignCount:   7767
+	compareCount:  12206
+	average time:  0.06010506300000002[ms]
+閾値: 6 === random     =============================
+	assignCount:   7817
+	compareCount:  12110
+	average time:  0.05618104100000002[ms]
+閾値: 7 === random     =============================
+	assignCount:   7886
+	compareCount:  12054
+	average time:  0.05234798900000004[ms]
+閾値: 8 === random     =============================
+	assignCount:   7968
+	compareCount:  12023
+	average time:  0.05869475399999998[ms]
+閾値: 9 === random     =============================
+	assignCount:   8031
+	compareCount:  11976
+	average time:  0.04999133900000001[ms]
+閾値: 10 === random     =============================
+	assignCount:   8088
+	compareCount:  11931
+	average time:  0.045280172999999986[ms]
+閾値: 11 === random     =============================
+	assignCount:   8187
+	compareCount:  11938
+	average time:  0.046538313[ms]
+閾値: 12 === random     =============================
+	assignCount:   8294
+	compareCount:  11955
+	average time:  0.049260907999999916[ms]
+閾値: 13 === random     =============================
+	assignCount:   8389
+	compareCount:  11987
+	average time:  0.04127936799999998[ms]
+閾値: 14 === random     =============================
+	assignCount:   8518
+	compareCount:  12059
+	average time:  0.04087017000000006[ms]
+閾値: 15 === random     =============================
+	assignCount:   8698
+	compareCount:  12134
+	average time:  0.04135085200000007[ms]
+閾値: 16 === random     =============================
+	assignCount:   8802
+	compareCount:  12147
+	average time:  0.041346461999999945[ms]
+閾値: 17 === random     =============================
+	assignCount:   8873
+	compareCount:  12117
+	average time:  0.04452544799999997[ms]
+閾値: 18 === random     =============================
+	assignCount:   8910
+	compareCount:  12114
+	average time:  0.04633866999999997[ms]
+閾値: 19 === random     =============================
+	assignCount:   9022
+	compareCount:  12188
+	average time:  0.04525510399999998[ms]
+閾値: 20 === random     =============================
+	assignCount:   9155
+	compareCount:  12270
+	average time:  0.04139892800000004[ms]
+閾値: 21 === random     =============================
+	assignCount:   9301
+	compareCount:  12362
+	average time:  0.046633385000000034[ms]
+閾値: 22 === random     =============================
+	assignCount:   9447
+	compareCount:  12486
+	average time:  0.03971462199999999[ms]
+閾値: 23 === random     =============================
+	assignCount:   9554
+	compareCount:  12569
+	average time:  0.04167532099999996[ms]
+閾値: 24 === random     =============================
+	assignCount:   9781
+	compareCount:  12762
+	average time:  0.04161591699999993[ms]
+閾値: 25 === random     =============================
+	assignCount:   9958
+	compareCount:  12842
+	average time:  0.04071973200000006[ms]
+閾値: 26 === random     =============================
+	assignCount:   9958
+	compareCount:  12823
+	average time:  0.04041063500000003[ms]
+閾値: 27 === random     =============================
+	assignCount:   10125
+	compareCount:  12962
+	average time:  0.04333385400000007[ms]
+閾値: 28 === random     =============================
+	assignCount:   10322
+	compareCount:  13105
+	average time:  0.04032050200000003[ms]
+閾値: 29 === random     =============================
+	assignCount:   10337
+	compareCount:  13091
+	average time:  0.03855754899999999[ms]
+閾値: 30 === random     =============================
+	assignCount:   10427
+	compareCount:  13181
+	average time:  0.03760019899999994[ms]
+閾値: 31 === random     =============================
+	assignCount:   10473
+	compareCount:  13208
+	average time:  0.03899022700000001[ms]
+閾値: 32 === random     =============================
+	assignCount:   10559
+	compareCount:  13236
+	average time:  0.03780252000000009[ms]
+閾値: 33 === random     =============================
+	assignCount:   10902
+	compareCount:  13539
+	average time:  0.03810127399999997[ms]
+閾値: 34 === random     =============================
+	assignCount:   11068
+	compareCount:  13690
+	average time:  0.03815927000000003[ms]
+閾値: 35 === random     =============================
+	assignCount:   11516
+	compareCount:  14079
+	average time:  0.04328068900000001[ms]
+閾値: 36 === random     =============================
+	assignCount:   11633
+	compareCount:  14182
+	average time:  0.043882127999999965[ms]
+閾値: 37 === random     =============================
+	assignCount:   11893
+	compareCount:  14419
+	average time:  0.044761980999999985[ms]
+閾値: 38 === random     =============================
+	assignCount:   11980
+	compareCount:  14472
+	average time:  0.04888304000000002[ms]
+閾値: 39 === random     =============================
+	assignCount:   12065
+	compareCount:  14535
+	average time:  0.048494310000000034[ms]
+閾値: 40 === random     =============================
+	assignCount:   12489
+	compareCount:  14929
+	average time:  0.05378169400000002[ms]
+閾値: 41 === random     =============================
+	assignCount:   12543
+	compareCount:  14963
+	average time:  0.04770169500000003[ms]
+閾値: 42 === random     =============================
+	assignCount:   12726
+	compareCount:  15105
+	average time:  0.04406747900000002[ms]
+閾値: 43 === random     =============================
+	assignCount:   12726
+	compareCount:  15105
+	average time:  0.05513500299999995[ms]
+閾値: 44 === random     =============================
+	assignCount:   12877
+	compareCount:  15246
+	average time:  0.04839635000000004[ms]
+閾値: 45 === random     =============================
+	assignCount:   13535
+	compareCount:  15816
+	average time:  0.050243052999999975[ms]
+閾値: 46 === random     =============================
+	assignCount:   13540
+	compareCount:  15782
+	average time:  0.04895362899999995[ms]
+閾値: 47 === random     =============================
+	assignCount:   13713
+	compareCount:  15933
+	average time:  0.051514738[ms]
+閾値: 48 === random     =============================
+	assignCount:   14083
+	compareCount:  16261
+	average time:  0.049493238999999994[ms]
+閾値: 49 === random     =============================
+	assignCount:   14793
+	compareCount:  16905
+	average time:  0.053275838000000006[ms]
+閾値: 50 === random     =============================
+	assignCount:   14921
+	compareCount:  16994
+	average time:  0.05443765500000012[ms]
+閾値: 51 === random     =============================
+	assignCount:   14921
+	compareCount:  16994
+	average time:  0.053116035000000034[ms]
+閾値: 52 === random     =============================
+	assignCount:   14921
+	compareCount:  16994
+	average time:  0.053231201999999984[ms]
+閾値: 53 === random     =============================
+	assignCount:   14921
+	compareCount:  16994
+	average time:  0.05348128000000001[ms]
+閾値: 54 === random     =============================
+	assignCount:   14921
+	compareCount:  16994
+	average time:  0.051276607[ms]
+閾値: 55 === random     =============================
+	assignCount:   15303
+	compareCount:  17308
+	average time:  0.052313666999999925[ms]
+閾値: 56 === random     =============================
+	assignCount:   15303
+	compareCount:  17308
+	average time:  0.05686152799999998[ms]
+閾値: 57 === random     =============================
+	assignCount:   15303
+	compareCount:  17308
+	average time:  0.05429688399999995[ms]
+閾値: 58 === random     =============================
+	assignCount:   15856
+	compareCount:  17812
+	average time:  0.05446321399999999[ms]
+閾値: 59 === random     =============================
+	assignCount:   15915
+	compareCount:  17823
+	average time:  0.055506681[ms]
+閾値: 60 === random     =============================
+	assignCount:   15915
+	compareCount:  17823
+	average time:  0.05515699899999994[ms]
+閾値: 61 === random     =============================
+	assignCount:   15915
+	compareCount:  17823
+	average time:  0.05142463899999996[ms]
+閾値: 62 === random     =============================
+	assignCount:   15915
+	compareCount:  17823
+	average time:  0.05118676000000003[ms]
+閾値: 63 === random     =============================
+	assignCount:   15915
+	compareCount:  17823
+	average time:  0.05597859900000007[ms]
+閾値: 64 === random     =============================
+	assignCount:   16580
+	compareCount:  18429
+	average time:  0.05510790700000001[ms]
+閾値: 65 === random     =============================
+	assignCount:   16580
+	compareCount:  18429
+	average time:  0.06554347600000004[ms]
+閾値: 66 === random     =============================
+	assignCount:   16580
+	compareCount:  18429
+	average time:  0.06815393099999995[ms]
+閾値: 67 === random     =============================
+	assignCount:   16580
+	compareCount:  18429
+	average time:  0.06281263299999998[ms]
+閾値: 68 === random     =============================
+	assignCount:   16775
+	compareCount:  18564
+	average time:  0.058459983[ms]
+閾値: 69 === random     =============================
+	assignCount:   16775
+	compareCount:  18564
+	average time:  0.06751495700000001[ms]
+閾値: 70 === random     =============================
+	assignCount:   16775
+	compareCount:  18564
+	average time:  0.06126899200000003[ms]
+閾値: 71 === random     =============================
+	assignCount:   16775
+	compareCount:  18564
+	average time:  0.061283553999999976[ms]
+閾値: 72 === random     =============================
+	assignCount:   16775
+	compareCount:  18564
+	average time:  0.05635167700000004[ms]
+閾値: 73 === random     =============================
+	assignCount:   16775
+	compareCount:  18564
+	average time:  0.06107653000000003[ms]
+閾値: 74 === random     =============================
+	assignCount:   16775
+	compareCount:  18564
+	average time:  0.06292213500000003[ms]
+閾値: 75 === random     =============================
+	assignCount:   16775
+	compareCount:  18564
+	average time:  0.06050150300000005[ms]
+閾値: 76 === random     =============================
+	assignCount:   17096
+	compareCount:  18858
+	average time:  0.05439215599999997[ms]
+閾値: 77 === random     =============================
+	assignCount:   17096
+	compareCount:  18858
+	average time:  0.05607785100000006[ms]
+閾値: 78 === random     =============================
+	assignCount:   17096
+	compareCount:  18858
+	average time:  0.05463517500000001[ms]
+閾値: 79 === random     =============================
+	assignCount:   17096
+	compareCount:  18858
+	average time:  0.05578329599999989[ms]
+閾値: 80 === random     =============================
+	assignCount:   17096
+	compareCount:  18858
+	average time:  0.06426684700000003[ms]
+閾値: 81 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.06403525699999993[ms]
+閾値: 82 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.05916895799999999[ms]
+閾値: 83 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.05950250499999994[ms]
+閾値: 84 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.061013183000000054[ms]
+閾値: 85 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.059513349[ms]
+閾値: 86 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.059117714999999994[ms]
+閾値: 87 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.05937584399999994[ms]
+閾値: 88 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.05783750400000001[ms]
+閾値: 89 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.059583011999999956[ms]
+閾値: 90 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.06023241399999995[ms]
+閾値: 91 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.0673395589999999[ms]
+閾値: 92 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.06102550800000002[ms]
+閾値: 93 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.05937882600000008[ms]
+閾値: 94 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.05436544500000006[ms]
+閾値: 95 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.053647531000000054[ms]
+閾値: 96 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.05405681800000003[ms]
+閾値: 97 === random     =============================
+	assignCount:   17602
+	compareCount:  19330
+	average time:  0.059160084[ms]
+閾値: 98 === random     =============================
+	assignCount:   18673
+	compareCount:  20379
+	average time:  0.056783477999999964[ms]
+閾値: 99 === random     =============================
+	assignCount:   18673
+	compareCount:  20379
+	average time:  0.057366424000000034[ms]
+閾値: 100 === random     =============================
+	assignCount:   18673
+	compareCount:  20379
+	average time:  0.05576256699999997[ms]
+閾値: 101 === random     =============================
+	assignCount:   20718
+	compareCount:  22364
+	average time:  0.06211148400000005[ms]
+閾値: 102 === random     =============================
+	assignCount:   20778
+	compareCount:  22322
+	average time:  0.060820594999999894[ms]
+閾値: 103 === random     =============================
+	assignCount:   20778
+	compareCount:  22322
+	average time:  0.06077531200000002[ms]
+閾値: 104 === random     =============================
+	assignCount:   20778
+	compareCount:  22322
+	average time:  0.06885118399999994[ms]
+閾値: 105 === random     =============================
+	assignCount:   20778
+	compareCount:  22322
+	average time:  0.06440621599999996[ms]
+閾値: 106 === random     =============================
+	assignCount:   20778
+	compareCount:  22322
+	average time:  0.06256100100000005[ms]
+閾値: 107 === random     =============================
+	assignCount:   20778
+	compareCount:  22322
+	average time:  0.06193096600000003[ms]
+閾値: 108 === random     =============================
+	assignCount:   20778
+	compareCount:  22322
+	average time:  0.068099007[ms]
+閾値: 109 === random     =============================
+	assignCount:   22420
+	compareCount:  23949
+	average time:  0.06827491800000006[ms]
+閾値: 110 === random     =============================
+	assignCount:   22420
+	compareCount:  23949
+	average time:  0.06802916699999997[ms]
+閾値: 111 === random     =============================
+	assignCount:   22420
+	compareCount:  23949
+	average time:  0.06403262000000003[ms]
+閾値: 112 === random     =============================
+	assignCount:   22982
+	compareCount:  24423
+	average time:  0.06957563599999993[ms]
+閾値: 113 === random     =============================
+	assignCount:   22982
+	compareCount:  24423
+	average time:  0.08420246500000007[ms]
+閾値: 114 === random     =============================
+	assignCount:   22982
+	compareCount:  24423
+	average time:  0.08107564899999994[ms]
+閾値: 115 === random     =============================
+	assignCount:   24698
+	compareCount:  26100
+	average time:  0.07480171199999995[ms]
+閾値: 116 === random     =============================
+	assignCount:   24698
+	compareCount:  26100
+	average time:  0.069157484[ms]
+閾値: 117 === random     =============================
+	assignCount:   24698
+	compareCount:  26100
+	average time:  0.06969362200000005[ms]
+閾値: 118 === random     =============================
+	assignCount:   24698
+	compareCount:  26100
+	average time:  0.07935615200000003[ms]
+閾値: 119 === random     =============================
+	assignCount:   24698
+	compareCount:  26100
+	average time:  0.07891922099999998[ms]
+閾値: 120 === random     =============================
+	assignCount:   24698
+	compareCount:  26100
+	average time:  0.07677873599999994[ms]
+閾値: 121 === random     =============================
+	assignCount:   24698
+	compareCount:  26100
+	average time:  0.07654098099999987[ms]
+閾値: 122 === random     =============================
+	assignCount:   24698
+	compareCount:  26100
+	average time:  0.07487237299999999[ms]
+閾値: 123 === random     =============================
+	assignCount:   24698
+	compareCount:  26100
+	average time:  0.06960735900000009[ms]
+閾値: 124 === random     =============================
+	assignCount:   24698
+	compareCount:  26100
+	average time:  0.07324990599999998[ms]
+閾値: 125 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.07688116100000005[ms]
+閾値: 126 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.08535464399999992[ms]
+閾値: 127 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.08274755099999989[ms]
+閾値: 128 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.075943145[ms]
+閾値: 129 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.08264067400000003[ms]
+閾値: 130 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.07574931199999997[ms]
+閾値: 131 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.08235526499999997[ms]
+閾値: 132 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.08479222500000011[ms]
+閾値: 133 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.08482871300000003[ms]
+閾値: 134 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.09145237399999999[ms]
+閾値: 135 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.0856665580000001[ms]
+閾値: 136 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.08248777899999998[ms]
+閾値: 137 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.08045705000000004[ms]
+閾値: 138 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.07689937899999998[ms]
+閾値: 139 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.07762745800000008[ms]
+閾値: 140 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.07977904799999998[ms]
+閾値: 141 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.08507640499999988[ms]
+閾値: 142 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.09047108899999988[ms]
+閾値: 143 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.08521370999999998[ms]
+閾値: 144 === random     =============================
+	assignCount:   26385
+	compareCount:  27738
+	average time:  0.08309963600000002[ms]
+閾値: 145 === random     =============================
+	assignCount:   27992
+	compareCount:  29277
+	average time:  0.09282174599999987[ms]
+閾値: 146 === random     =============================
+	assignCount:   27992
+	compareCount:  29277
+	average time:  0.09426406700000013[ms]
+閾値: 147 === random     =============================
+	assignCount:   27992
+	compareCount:  29277
+	average time:  0.09098556299999995[ms]
+閾値: 148 === random     =============================
+	assignCount:   27992
+	compareCount:  29277
+	average time:  0.0914665559999999[ms]
+閾値: 149 === random     =============================
+	assignCount:   27992
+	compareCount:  29277
+	average time:  0.09229648500000012[ms]
+閾値: 150 === random     =============================
+	assignCount:   27992
+	compareCount:  29277
+	average time:  0.09090785200000015[ms]
+
+配列の要素数: 10000
+閾値: 2 === random     =============================
+	assignCount:   100071
+	compareCount:  174230
+	average time:  1.1838686609999993[ms]
+閾値: 3 === random     =============================
+	assignCount:   100161
+	compareCount:  172221
+	average time:  1.0665948779999996[ms]
+閾値: 4 === random     =============================
+	assignCount:   100438
+	compareCount:  170250
+	average time:  1.0532547579999998[ms]
+閾値: 5 === random     =============================
+	assignCount:   100941
+	compareCount:  168702
+	average time:  1.0260511660000005[ms]
+閾値: 6 === random     =============================
+	assignCount:   101525
+	compareCount:  167610
+	average time:  1.036765927000001[ms]
+閾値: 7 === random     =============================
+	assignCount:   102082
+	compareCount:  166895
+	average time:  1.0154804899999998[ms]
+閾値: 8 === random     =============================
+	assignCount:   102748
+	compareCount:  166435
+	average time:  1.0391953890000003[ms]
+閾値: 9 === random     =============================
+	assignCount:   103685
+	compareCount:  166183
+	average time:  1.0308489990000003[ms]
+閾値: 10 === random     =============================
+	assignCount:   104620
+	compareCount:  166188
+	average time:  0.9853121489999993[ms]
+閾値: 11 === random     =============================
+	assignCount:   105638
+	compareCount:  166356
+	average time:  0.9394065040000004[ms]
+閾値: 12 === random     =============================
+	assignCount:   106584
+	compareCount:  166480
+	average time:  0.975474505[ms]
+閾値: 13 === random     =============================
+	assignCount:   107688
+	compareCount:  166736
+	average time:  0.9449212790000009[ms]
+閾値: 14 === random     =============================
+	assignCount:   108489
+	compareCount:  166914
+	average time:  0.9328450510000007[ms]
+閾値: 15 === random     =============================
+	assignCount:   109787
+	compareCount:  167563
+	average time:  0.9361069440000002[ms]
+閾値: 16 === random     =============================
+	assignCount:   110893
+	compareCount:  168131
+	average time:  0.9428891269999995[ms]
+閾値: 17 === random     =============================
+	assignCount:   112389
+	compareCount:  168969
+	average time:  0.888451124[ms]
+閾値: 18 === random     =============================
+	assignCount:   113566
+	compareCount:  169628
+	average time:  0.9179023090000002[ms]
+閾値: 19 === random     =============================
+	assignCount:   114598
+	compareCount:  170257
+	average time:  0.8917359000000004[ms]
+閾値: 20 === random     =============================
+	assignCount:   115668
+	compareCount:  170870
+	average time:  0.8857349480000009[ms]
+閾値: 21 === random     =============================
+	assignCount:   116664
+	compareCount:  171511
+	average time:  0.8766691309999993[ms]
+閾値: 22 === random     =============================
+	assignCount:   117649
+	compareCount:  172107
+	average time:  0.8695916920000004[ms]
+閾値: 23 === random     =============================
+	assignCount:   119141
+	compareCount:  173188
+	average time:  0.8678257680000001[ms]
+閾値: 24 === random     =============================
+	assignCount:   120234
+	compareCount:  173871
+	average time:  0.8765420540000005[ms]
+閾値: 25 === random     =============================
+	assignCount:   122002
+	compareCount:  175063
+	average time:  0.9214298679999989[ms]
+閾値: 26 === random     =============================
+	assignCount:   123429
+	compareCount:  176089
+	average time:  0.8821286829999999[ms]
+閾値: 27 === random     =============================
+	assignCount:   124787
+	compareCount:  177135
+	average time:  0.9612045699999994[ms]
+閾値: 28 === random     =============================
+	assignCount:   126401
+	compareCount:  178332
+	average time:  0.9667491880000008[ms]
+閾値: 29 === random     =============================
+	assignCount:   127975
+	compareCount:  179550
+	average time:  0.911993464[ms]
+閾値: 30 === random     =============================
+	assignCount:   129369
+	compareCount:  180686
+	average time:  0.9156669339999992[ms]
+閾値: 31 === random     =============================
+	assignCount:   130377
+	compareCount:  181359
+	average time:  0.918823527[ms]
+閾値: 32 === random     =============================
+	assignCount:   131426
+	compareCount:  182159
+	average time:  0.8907051019999993[ms]
+閾値: 33 === random     =============================
+	assignCount:   133004
+	compareCount:  183413
+	average time:  0.8838491710000005[ms]
+閾値: 34 === random     =============================
+	assignCount:   134562
+	compareCount:  184697
+	average time:  0.9341077280000002[ms]
+閾値: 35 === random     =============================
+	assignCount:   135553
+	compareCount:  185293
+	average time:  0.926282537[ms]
+閾値: 36 === random     =============================
+	assignCount:   136787
+	compareCount:  186371
+	average time:  0.9555511380000014[ms]
+閾値: 37 === random     =============================
+	assignCount:   137441
+	compareCount:  186824
+	average time:  0.9426953449999993[ms]
+閾値: 38 === random     =============================
+	assignCount:   138590
+	compareCount:  187753
+	average time:  0.9081360409999992[ms]
+閾値: 39 === random     =============================
+	assignCount:   139495
+	compareCount:  188534
+	average time:  0.8686067099999998[ms]
+閾値: 40 === random     =============================
+	assignCount:   140652
+	compareCount:  189538
+	average time:  0.8682324749999992[ms]
+閾値: 41 === random     =============================
+	assignCount:   141707
+	compareCount:  190288
+	average time:  0.9316917600000012[ms]
+閾値: 42 === random     =============================
+	assignCount:   143114
+	compareCount:  191578
+	average time:  0.9371143570000005[ms]
+閾値: 43 === random     =============================
+	assignCount:   144974
+	compareCount:  193128
+	average time:  0.9224251049999996[ms]
+閾値: 44 === random     =============================
+	assignCount:   146956
+	compareCount:  194914
+	average time:  0.9114105380000009[ms]
+閾値: 45 === random     =============================
+	assignCount:   149439
+	compareCount:  197131
+	average time:  0.9290163249999995[ms]
+閾値: 46 === random     =============================
+	assignCount:   150327
+	compareCount:  197890
+	average time:  0.9253798530000001[ms]
+閾値: 47 === random     =============================
+	assignCount:   151841
+	compareCount:  199177
+	average time:  0.9011169289999998[ms]
+閾値: 48 === random     =============================
+	assignCount:   152714
+	compareCount:  199886
+	average time:  1.032854628000001[ms]
+閾値: 49 === random     =============================
+	assignCount:   154204
+	compareCount:  201173
+	average time:  1.020089953000001[ms]
+閾値: 50 === random     =============================
+	assignCount:   156166
+	compareCount:  202997
+	average time:  0.9249507030000007[ms]
+閾値: 51 === random     =============================
+	assignCount:   158584
+	compareCount:  205154
+	average time:  0.9476292319999992[ms]
+閾値: 52 === random     =============================
+	assignCount:   160024
+	compareCount:  206366
+	average time:  0.9885799240000003[ms]
+閾値: 53 === random     =============================
+	assignCount:   160470
+	compareCount:  206667
+	average time:  0.9287893040000004[ms]
+閾値: 54 === random     =============================
+	assignCount:   162005
+	compareCount:  207947
+	average time:  1.0221338360000005[ms]
+閾値: 55 === random     =============================
+	assignCount:   164346
+	compareCount:  210014
+	average time:  0.993557700000001[ms]
+閾値: 56 === random     =============================
+	assignCount:   166088
+	compareCount:  211529
+	average time:  1.0227602469999997[ms]
+閾値: 57 === random     =============================
+	assignCount:   168182
+	compareCount:  213428
+	average time:  1.0115108669999997[ms]
+閾値: 58 === random     =============================
+	assignCount:   170662
+	compareCount:  215628
+	average time:  1.0359733320000013[ms]
+閾値: 59 === random     =============================
+	assignCount:   171830
+	compareCount:  216525
+	average time:  0.9688991190000001[ms]
+閾値: 60 === random     =============================
+	assignCount:   173347
+	compareCount:  217902
+	average time:  0.9545721309999996[ms]
+閾値: 61 === random     =============================
+	assignCount:   174302
+	compareCount:  218782
+	average time:  1.057591431[ms]
+閾値: 62 === random     =============================
+	assignCount:   175987
+	compareCount:  220278
+	average time:  0.9621995319999994[ms]
+閾値: 63 === random     =============================
+	assignCount:   177078
+	compareCount:  221293
+	average time:  1.0420817160000007[ms]
+閾値: 64 === random     =============================
+	assignCount:   177624
+	compareCount:  221707
+	average time:  0.9666313469999995[ms]
+閾値: 65 === random     =============================
+	assignCount:   179944
+	compareCount:  223793
+	average time:  0.9969751189999991[ms]
+閾値: 66 === random     =============================
+	assignCount:   182575
+	compareCount:  226343
+	average time:  1.077112233[ms]
+閾値: 67 === random     =============================
+	assignCount:   183384
+	compareCount:  227033
+	average time:  1.029613657[ms]
+閾値: 68 === random     =============================
+	assignCount:   184725
+	compareCount:  228269
+	average time:  1.001773225000001[ms]
+閾値: 69 === random     =============================
+	assignCount:   186140
+	compareCount:  229543
+	average time:  0.9891966980000003[ms]
+閾値: 70 === random     =============================
+	assignCount:   186353
+	compareCount:  229653
+	average time:  1.0197320389999989[ms]
+閾値: 71 === random     =============================
+	assignCount:   188014
+	compareCount:  231172
+	average time:  1.1133633889999999[ms]
+閾値: 72 === random     =============================
+	assignCount:   189962
+	compareCount:  232930
+	average time:  1.106154480000001[ms]
+閾値: 73 === random     =============================
+	assignCount:   191323
+	compareCount:  234049
+	average time:  1.1065444769999997[ms]
+閾値: 74 === random     =============================
+	assignCount:   192477
+	compareCount:  235133
+	average time:  1.1487790650000003[ms]
+閾値: 75 === random     =============================
+	assignCount:   193922
+	compareCount:  236466
+	average time:  1.0500066079999997[ms]
+閾値: 76 === random     =============================
+	assignCount:   197563
+	compareCount:  239826
+	average time:  1.0743260279999998[ms]
+閾値: 77 === random     =============================
+	assignCount:   200797
+	compareCount:  242927
+	average time:  1.0944633369999996[ms]
+閾値: 78 === random     =============================
+	assignCount:   202662
+	compareCount:  244651
+	average time:  1.0760794260000008[ms]
+閾値: 79 === random     =============================
+	assignCount:   203953
+	compareCount:  245813
+	average time:  1.0653422169999995[ms]
+閾値: 80 === random     =============================
+	assignCount:   205275
+	compareCount:  246991
+	average time:  1.0591861289999995[ms]
+閾値: 81 === random     =============================
+	assignCount:   207606
+	compareCount:  249162
+	average time:  1.1660318260000004[ms]
+閾値: 82 === random     =============================
+	assignCount:   209446
+	compareCount:  250878
+	average time:  1.0671403660000012[ms]
+閾値: 83 === random     =============================
+	assignCount:   210178
+	compareCount:  251485
+	average time:  1.0926006070000003[ms]
+閾値: 84 === random     =============================
+	assignCount:   211586
+	compareCount:  252834
+	average time:  1.0362101679999998[ms]
+閾値: 85 === random     =============================
+	assignCount:   214963
+	compareCount:  256045
+	average time:  1.022835252[ms]
+閾値: 86 === random     =============================
+	assignCount:   217433
+	compareCount:  258361
+	average time:  1.009084803000001[ms]
+閾値: 87 === random     =============================
+	assignCount:   218168
+	compareCount:  259067
+	average time:  1.1311563779999987[ms]
+閾値: 88 === random     =============================
+	assignCount:   220752
+	compareCount:  261488
+	average time:  1.0759920640000007[ms]
+閾値: 89 === random     =============================
+	assignCount:   221957
+	compareCount:  262503
+	average time:  1.1447917580000009[ms]
+閾値: 90 === random     =============================
+	assignCount:   223673
+	compareCount:  264062
+	average time:  1.1064014999999991[ms]
+閾値: 91 === random     =============================
+	assignCount:   224567
+	compareCount:  264925
+	average time:  1.0098748930000008[ms]
+閾値: 92 === random     =============================
+	assignCount:   225567
+	compareCount:  265810
+	average time:  1.179192935000001[ms]
+閾値: 93 === random     =============================
+	assignCount:   227391
+	compareCount:  267396
+	average time:  1.1968936130000005[ms]
+閾値: 94 === random     =============================
+	assignCount:   228107
+	compareCount:  268075
+	average time:  1.0626639360000003[ms]
+閾値: 95 === random     =============================
+	assignCount:   229979
+	compareCount:  269871
+	average time:  1.0991719730000005[ms]
+閾値: 96 === random     =============================
+	assignCount:   230625
+	compareCount:  270467
+	average time:  1.0034069490000013[ms]
+閾値: 97 === random     =============================
+	assignCount:   230625
+	compareCount:  270467
+	average time:  1.0145657579999998[ms]
+閾値: 98 === random     =============================
+	assignCount:   231445
+	compareCount:  271247
+	average time:  1.0241937509999972[ms]
+閾値: 99 === random     =============================
+	assignCount:   232356
+	compareCount:  272121
+	average time:  1.0936484489999991[ms]
+閾値: 100 === random     =============================
+	assignCount:   234458
+	compareCount:  274080
+	average time:  1.058834863000001[ms]
+閾値: 101 === random     =============================
+	assignCount:   234548
+	compareCount:  274069
+	average time:  1.0170928519999995[ms]
+閾値: 102 === random     =============================
+	assignCount:   235886
+	compareCount:  275384
+	average time:  1.0471215809999994[ms]
+閾値: 103 === random     =============================
+	assignCount:   238431
+	compareCount:  277672
+	average time:  1.0328968299999999[ms]
+閾値: 104 === random     =============================
+	assignCount:   240020
+	compareCount:  279140
+	average time:  1.0402196009999998[ms]
+閾値: 105 === random     =============================
+	assignCount:   240515
+	compareCount:  279562
+	average time:  1.020205339[ms]
+閾値: 106 === random     =============================
+	assignCount:   240515
+	compareCount:  279562
+	average time:  1.0146761980000003[ms]
+閾値: 107 === random     =============================
+	assignCount:   244576
+	compareCount:  283340
+	average time:  1.0843421710000003[ms]
+閾値: 108 === random     =============================
+	assignCount:   246220
+	compareCount:  284754
+	average time:  1.0494798700000008[ms]
+閾値: 109 === random     =============================
+	assignCount:   249820
+	compareCount:  288227
+	average time:  1.1328033609999977[ms]
+閾値: 110 === random     =============================
+	assignCount:   250925
+	compareCount:  289287
+	average time:  1.106305868[ms]
+閾値: 111 === random     =============================
+	assignCount:   252313
+	compareCount:  290624
+	average time:  1.150463235[ms]
+閾値: 112 === random     =============================
+	assignCount:   253489
+	compareCount:  291750
+	average time:  1.1112068119999998[ms]
+閾値: 113 === random     =============================
+	assignCount:   254280
+	compareCount:  292489
+	average time:  1.150312491000001[ms]
+閾値: 114 === random     =============================
+	assignCount:   255592
+	compareCount:  293762
+	average time:  1.111761957999999[ms]
+閾値: 115 === random     =============================
+	assignCount:   260169
+	compareCount:  298242
+	average time:  1.2138812300000006[ms]
+閾値: 116 === random     =============================
+	assignCount:   262660
+	compareCount:  300650
+	average time:  1.2010518299999997[ms]
+閾値: 117 === random     =============================
+	assignCount:   263301
+	compareCount:  301221
+	average time:  1.172584565000001[ms]
+閾値: 118 === random     =============================
+	assignCount:   265052
+	compareCount:  302837
+	average time:  1.0737056230000002[ms]
+閾値: 119 === random     =============================
+	assignCount:   265052
+	compareCount:  302837
+	average time:  1.0558061500000002[ms]
+閾値: 120 === random     =============================
+	assignCount:   267794
+	compareCount:  305490
+	average time:  1.1211646960000003[ms]
+閾値: 121 === random     =============================
+	assignCount:   268063
+	compareCount:  305655
+	average time:  1.2177023409999994[ms]
+閾値: 122 === random     =============================
+	assignCount:   271235
+	compareCount:  308726
+	average time:  1.1134136269999986[ms]
+閾値: 123 === random     =============================
+	assignCount:   273381
+	compareCount:  310851
+	average time:  1.14385183[ms]
+閾値: 124 === random     =============================
+	assignCount:   276665
+	compareCount:  314049
+	average time:  1.2136277799999977[ms]
+閾値: 125 === random     =============================
+	assignCount:   279323
+	compareCount:  316584
+	average time:  1.133423676000001[ms]
+閾値: 126 === random     =============================
+	assignCount:   279323
+	compareCount:  316584
+	average time:  1.099641118000001[ms]
+閾値: 127 === random     =============================
+	assignCount:   283922
+	compareCount:  321007
+	average time:  1.1036852389999994[ms]
+閾値: 128 === random     =============================
+	assignCount:   287469
+	compareCount:  324342
+	average time:  1.1018666039999994[ms]
+閾値: 129 === random     =============================
+	assignCount:   289116
+	compareCount:  325949
+	average time:  1.1091946550000018[ms]
+閾値: 130 === random     =============================
+	assignCount:   289116
+	compareCount:  325949
+	average time:  1.1327171910000005[ms]
+閾値: 131 === random     =============================
+	assignCount:   290009
+	compareCount:  326751
+	average time:  1.2008762940000013[ms]
+閾値: 132 === random     =============================
+	assignCount:   291767
+	compareCount:  328475
+	average time:  1.1560841500000003[ms]
+閾値: 133 === random     =============================
+	assignCount:   296936
+	compareCount:  333484
+	average time:  1.321035271999998[ms]
+閾値: 134 === random     =============================
+	assignCount:   296936
+	compareCount:  333484
+	average time:  1.1653908380000004[ms]
+閾値: 135 === random     =============================
+	assignCount:   296936
+	compareCount:  333484
+	average time:  1.2794201210000018[ms]
+閾値: 136 === random     =============================
+	assignCount:   296936
+	compareCount:  333484
+	average time:  1.274531922999999[ms]
+閾値: 137 === random     =============================
+	assignCount:   297366
+	compareCount:  333792
+	average time:  1.205704594999998[ms]
+閾値: 138 === random     =============================
+	assignCount:   298291
+	compareCount:  334623
+	average time:  1.2675179480000012[ms]
+閾値: 139 === random     =============================
+	assignCount:   303675
+	compareCount:  339830
+	average time:  1.3456630980000008[ms]
+閾値: 140 === random     =============================
+	assignCount:   303675
+	compareCount:  339830
+	average time:  1.3048108759999992[ms]
+閾値: 141 === random     =============================
+	assignCount:   303675
+	compareCount:  339830
+	average time:  1.3212632229999988[ms]
+閾値: 142 === random     =============================
+	assignCount:   308606
+	compareCount:  344562
+	average time:  1.3149405460000012[ms]
+閾値: 143 === random     =============================
+	assignCount:   308606
+	compareCount:  344562
+	average time:  1.2134630729999996[ms]
+閾値: 144 === random     =============================
+	assignCount:   309843
+	compareCount:  345716
+	average time:  1.3467823189999986[ms]
+閾値: 145 === random     =============================
+	assignCount:   312768
+	compareCount:  348354
+	average time:  1.285741134999998[ms]
+閾値: 146 === random     =============================
+	assignCount:   312768
+	compareCount:  348354
+	average time:  1.2253823200000016[ms]
+閾値: 147 === random     =============================
+	assignCount:   315354
+	compareCount:  350901
+	average time:  1.36718201[ms]
+閾値: 148 === random     =============================
+	assignCount:   315354
+	compareCount:  350901
+	average time:  1.3083071980000007[ms]
+閾値: 149 === random     =============================
+	assignCount:   317088
+	compareCount:  352554
+	average time:  1.308075858000001[ms]
+閾値: 150 === random     =============================
+	assignCount:   324015
+	compareCount:  359321
+	average time:  1.2603970279999999[ms]

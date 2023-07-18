@@ -3,8 +3,6 @@ public class SortTest {
         int[] array1 = new int[10];
         setIntArray(array1, 100);
         int[] array2 = cloneIntArray(array1);
-        int[] array3 = cloneIntArray(array1);
-        int[] array4 = cloneIntArray(array1);
 
         System.out.println("Bubble Sort");
         BubbleSort bs = new BubbleSort(array1);
@@ -18,17 +16,6 @@ public class SortTest {
         ss.selectionSort();
         display(array2);
 
-        System.out.println("Insert Sort");
-        InsertionSortX Is = new InsertionSortX(array3);
-        display(array3);
-        Is.insertionSortX();
-        display(array3);
-
-        System.out.println("Shell Sort");
-        ShellSort sh = new ShellSort(array4);
-        display(array4);
-        sh.shellSort();
-        display(array4);
     }
 
     public static int[] cloneIntArray(int[] array) {

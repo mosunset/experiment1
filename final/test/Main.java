@@ -47,26 +47,29 @@ public class MineSweeper {
 
     void initTable() {
         setBombs();
+        // ここから実装:盤面を初期化する．
 
-        /* ----- ここから実装してください． ----- */
-        
     }
 
     void setBombs() {
-        /* ----- ここから実装してください． ----- */
-        
+        // ここから実装:盤面に地雷をセットする．
+        // セットする地雷の数はMineSweeperのインスタンスを生成する際に引数numberOfBombsとして設定されている．
+
     }
 
     public void openTile(int x, int y, MineSweeperGUI gui) {
-        /* ----- ここから実装してください． ----- */
+        // ここから実装:パネルを左クリックした際に実行される．
+
     }
 
     public void setFlag(int x, int y, MineSweeperGUI gui) {
-        /* ----- ここから実装してください． ----- */
+        // ここから実装:パネルを右クリックした際に実行される．
+
     }
 
     private void openAllTiles(MineSweeperGUI gui) {
-        /* ----- ここから実装してください． ----- */
+        // ここから実装:全てのパネルを開く．
+
     }
 
 }

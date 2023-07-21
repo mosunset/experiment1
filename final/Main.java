@@ -207,3 +207,4 @@ class ResultDialog extends Dialog {
         this.setVisible(true);
     }
 }
+pine mines

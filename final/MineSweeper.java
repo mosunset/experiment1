@@ -14,7 +14,6 @@ public class MineSweeper {
     private final int numberOfBombs;
     private final int[][] table;
 
-
     public MineSweeper(int height, int width, int numberOfBombs) {
         this.height = height;
         this.width = width;
@@ -37,10 +36,12 @@ public class MineSweeper {
         setBombs();
 
         /* ----- ここから実装してください． ----- */
+        
     }
 
     void setBombs() {
         /* ----- ここから実装してください． ----- */
+        
     }
 
     public void openTile(int x, int y, MineSweeperGUI gui) {

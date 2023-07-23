@@ -78,19 +78,26 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
 
         Button btn = new Button();
         btn.setLabel("new Game config:");
+
+        Main pear = this;
         btn.addMouseListener(new MouseListener() {
             @Override
             public void mouseClicked(MouseEvent e) {
+                int num1 = 9;
                 try {
-                    int num1 = Integer.parseInt(textField1.getText());
+                    num1 = Integer.parseInt(textField1.getText());
                     int num2 = Integer.parseInt(textField2.getText());
-                    if (50 >= num1 && num1 >= 1 && 2000 >= num2 && num2 >= 1) {
+                    if (50 >= num1 && num1 >= 1 && 2000 >= num2 && num2 >= 1 && num1 * num1 - 10 > num2) {
+                        pear.setVisible(false);
                         new Main(num1, num1, num2);
                     } else {
                         throw new Exception();
                     }
+                }catch(NumberFormatException ex){
+                    resultDialog.showDialog("整数のみを入力してください");
                 } catch (Exception ex) {
-                    resultDialog.showDialog("正の整数のみを入力してください([1-50],[1-2000])");
+                    System.out.println(ex);
+                    resultDialog.showDialog("整数のみを入力してください([4-50],[1-" + (num1 * num1 - 10) + "])");
                 }
 
             }
@@ -128,7 +135,7 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
             }
         }
 
-        text = new Label("          Enjoy This Game!!          ", Label.CENTER);
+        text = new Label("         \\\\ Enjoy This Game!! //         ", Label.CENTER);
         text.setSize(50 * ms.getWidth(), 50);
         text.setFont(f);
 
@@ -344,7 +351,7 @@ class ResultDialog extends Dialog {
         label = new Label();
         p1.add(label);
         this.add(p1);
-        this.setSize(300, 100);
+        this.setSize(350, 200);
         btn = new Button();
         btn.setLabel("Close");
         btn.addMouseListener(new MouseListener() {

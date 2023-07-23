@@ -10,7 +10,7 @@ import java.awt.Button;
 import java.awt.Color;
 import java.awt.Dialog;
 import java.awt.Font;
-
+import java.util.Random;
 
 public class Main extends Frame implements WindowListener, MineSweeperGUI {
 
@@ -21,7 +21,7 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
 
     public Main() {
         super("MineSweeper");
-        ms = new MineSweeper(9, 9, 10);  // 地雷が10個ある9×9の盤面
+        ms = new MineSweeper(9, 9, 10); // 地雷が10個ある9×9の盤面
         init();
     }
 
@@ -85,19 +85,25 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
     @Override
     public void setTextToTile(int x, int y, String text) {
         this.tileTable[y][x].setLabel(text);
+
+        // ボタン無効化
+        // this.tileTable[y][x].setEnabled(false);
+
+        // ボタン背景色
+        this.tileTable[y][x].setBackground(Color.gray);
+        this.tileTable[y][x].setForeground(getBackground());
     }
 
     @Override
     public void win() {
-        resultDialog.showDialog("Win !!!");
+        resultDialog.showDialog("You Win !!!");
     }
 
     @Override
     public void lose() {
-        resultDialog.showDialog("Lose ...");
+        resultDialog.showDialog("You Lose ...");
     }
 }
-
 
 class MouseEventHandler implements MouseListener {
 
@@ -119,16 +125,18 @@ class MouseEventHandler implements MouseListener {
                 // Left click
                 ms.openTile(x, y, msgui);
             }
-            break;
+                break;
             case MouseEvent.BUTTON2: {
                 // Wheel click
+                // TODO:下一行を削除すること
+                ms.openAllTiles(msgui);
             }
-            break;
+                break;
             case MouseEvent.BUTTON3: {
                 // Right click
                 ms.setFlag(x, y, msgui);
             }
-            break;
+                break;
         }
     }
 
@@ -153,7 +161,6 @@ class MouseEventHandler implements MouseListener {
     }
 
 }
-
 
 class ResultDialog extends Dialog {
 
@@ -207,5 +214,3 @@ class ResultDialog extends Dialog {
         this.setVisible(true);
     }
 }
-
-

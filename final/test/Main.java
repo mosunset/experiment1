@@ -6,6 +6,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
+import java.util.Random;
 import java.awt.Button;
 import java.awt.Color;
 import java.awt.Dialog;
@@ -19,13 +20,14 @@ interface MineSweeperGUI {
     public void lose();
 }
 
-public class MineSweeper {
+class MineSweeper {
 
     private final int height;
     private final int width;
     private final int numberOfTiles;
     private final int numberOfBombs;
     private final int[][] table;
+    private boolean[][] revealed;
 
     public MineSweeper(int height, int width, int numberOfBombs) {
         this.height = height;
@@ -33,7 +35,7 @@ public class MineSweeper {
         this.numberOfTiles = height * width;
         this.numberOfBombs = numberOfBombs;
         this.table = new int[height][width];
-
+        this.revealed = new boolean[height][width];
         initTable();
     }
 
@@ -48,28 +50,91 @@ public class MineSweeper {
     void initTable() {
         setBombs();
         // ここから実装:盤面を初期化する．
-
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                if (table[y][x] != -1) {
+                    int count = countAdjacentBombs(x, y);
+                    table[y][x] = count;
+                }
+            }
+        }
     }
 
     void setBombs() {
         // ここから実装:盤面に地雷をセットする．
-        // セットする地雷の数はMineSweeperのインスタンスを生成する際に引数numberOfBombsとして設定されている．
+        Random rand = new Random();
+        int bombsPlaced = 0;
+        while (bombsPlaced < numberOfBombs) {
+            int x = rand.nextInt(width);
+            int y = rand.nextInt(height);
+            if (table[y][x] != -1) {
+                table[y][x] = -1; // -1 represents a bomb
+                bombsPlaced++;
+            }
+        }
+    }
 
+    private int countAdjacentBombs(int x, int y) {
+        int count = 0;
+        for (int j = y - 1; j <= y + 1; j++) {
+            for (int i = x - 1; i <= x + 1; i++) {
+                if (i >= 0 && i < width && j >= 0 && j < height) {
+                    if (table[j][i] == -1) {
+                        count++;
+                    }
+                }
+            }
+        }
+        return count;
     }
 
     public void openTile(int x, int y, MineSweeperGUI gui) {
         // ここから実装:パネルを左クリックした際に実行される．
+        if (x >= 0 && x < width && y >= 0 && y < height && !revealed[y][x]) {
+            revealed[y][x] = true;
+            if (table[y][x] == -1) {
+                gui.lose();
+                openAllTiles(gui);
+            } else if (table[y][x] == 0) {
+                openAdjacentTiles(x, y, gui);
+            } else {
+                gui.setTextToTile(x, y, Integer.toString(table[y][x]));
+            }
+        }
+    }
 
+    private void openAdjacentTiles(int x, int y, MineSweeperGUI gui) {
+        for (int j = y - 1; j <= y + 1; j++) {
+            for (int i = x - 1; i <= x + 1; i++) {
+                if (i >= 0 && i < width && j >= 0 && j < height && !revealed[j][i]) {
+                    revealed[j][i] = true;
+                    if (table[j][i] == 0) {
+                        openAdjacentTiles(i, j, gui);
+                    } else if (table[j][i] != -1) {
+                        gui.setTextToTile(i, j, Integer.toString(table[j][i]));
+                    }
+                }
+            }
+        }
     }
 
     public void setFlag(int x, int y, MineSweeperGUI gui) {
         // ここから実装:パネルを右クリックした際に実行される．
-
+        // Note: This method is not implemented in this version. You can add flag
+        // functionality here.
     }
 
     private void openAllTiles(MineSweeperGUI gui) {
         // ここから実装:全てのパネルを開く．
-
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                if (table[y][x] == -1) {
+                    gui.setTextToTile(x, y, "X");
+                } else {
+                    gui.setTextToTile(x, y, Integer.toString(table[y][x]));
+                }
+            }
+        }
     }
 
 }
@@ -83,7 +148,7 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
 
     public Main() {
         super("MineSweeper");
-        ms = new MineSweeper(9, 9, 10);  // 地雷が10個ある9×9の盤面
+        ms = new MineSweeper(9, 9, 10); // 地雷が10個ある9×9の盤面
         init();
     }
 
@@ -160,7 +225,6 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
     }
 }
 
-
 class MouseEventHandler implements MouseListener {
 
     MineSweeper ms;
@@ -181,16 +245,16 @@ class MouseEventHandler implements MouseListener {
                 // Left click
                 ms.openTile(x, y, msgui);
             }
-            break;
+                break;
             case MouseEvent.BUTTON2: {
                 // Wheel click
             }
-            break;
+                break;
             case MouseEvent.BUTTON3: {
                 // Right click
                 ms.setFlag(x, y, msgui);
             }
-            break;
+                break;
         }
     }
 
@@ -215,7 +279,6 @@ class MouseEventHandler implements MouseListener {
     }
 
 }
-
 
 class ResultDialog extends Dialog {
 
@@ -269,5 +332,3 @@ class ResultDialog extends Dialog {
         this.setVisible(true);
     }
 }
-
-

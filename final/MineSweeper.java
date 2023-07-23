@@ -47,7 +47,8 @@ public class MineSweeper {
         // TODO:debugflag
         this.debugcount = 0;
 
-        initTable();// ボードの初期化
+        // ファーストクリック仕様作成につき削除
+        // initTable();// ボードの初期化
     }
 
     public int getHeight() {
@@ -98,7 +99,6 @@ public class MineSweeper {
     // ボードの初期化
     void initTable() {
         // 仕様1:ゲーム開始時に，盤面にランダムに地雷を設置する
-        
         setBombs(); // 地雷の設置
         // ここから実装:盤面を初期化する．
 
@@ -118,6 +118,14 @@ public class MineSweeper {
         // ここから実装:盤面に地雷をセットする．
         // セットする地雷の数はMineSweeperのインスタンスを生成する際に引数numberOfBombsとして設定されている．
         Random rand = new Random();
+
+        // ファーストクリック仕様のための初期化
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                table[y][x] = 0;
+            }
+        }
+
         int bombsPlaced = 0;
         while (bombsPlaced < numberOfBombs) {
             int x = rand.nextInt(width);
@@ -155,8 +163,14 @@ public class MineSweeper {
         // TODO:仕様5:ゲームクリアもしくはゲームオーバーになった際，適切なダイアログを表示する.
 
         if (!gameEnd) { // ゲーム終了後クリック無反応にする
-
             if (x >= 0 && x < width && y >= 0 && y < height && !revealed[y][x] && !flags[y][x]) {
+                if (firstClick) {
+                    initTable();
+                    while (table[y][x] != 0) {// 最初のクリック時そのマスが0になるまで初期化する
+                        initTable();
+                    }
+                    firstClick = false;
+                }
 
                 revealed[y][x] = true;
                 if (table[y][x] == -1) {
@@ -210,6 +224,9 @@ public class MineSweeper {
         // TODO:仕様4-1:開かれていないパネルを右クリックした際，そのパネルに旗を立てる/取り除く
         if (!gameEnd) { // ゲーム終了後クリック無反応にする
             if (x >= 0 && x < width && y >= 0 && y < height && !revealed[y][x]) {
+                if (firstClick) {
+                    return;
+                }
                 if (!this.flags[y][x]) {
 
                     gui.setTextToTile(x, y, -2, true); // タイルにフラグを表示

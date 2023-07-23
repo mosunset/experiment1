@@ -87,13 +87,13 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
                 try {
                     num1 = Integer.parseInt(textField1.getText());
                     int num2 = Integer.parseInt(textField2.getText());
-                    if (50 >= num1 && num1 >= 1 && 2000 >= num2 && num2 >= 1 && num1 * num1 - 10 > num2) {
+                    if (50 >= num1 && num1 >= 4 && num1 * num1 - 10 > num2 && num2 >= 1) {
                         pear.setVisible(false);
                         new Main(num1, num1, num2);
                     } else {
                         throw new Exception();
                     }
-                }catch(NumberFormatException ex){
+                } catch (NumberFormatException ex) {
                     resultDialog.showDialog("整数のみを入力してください");
                 } catch (Exception ex) {
                     resultDialog.showDialog("整数のみを入力してください([4-50],[1-" + (num1 * num1 - 10) + "])");

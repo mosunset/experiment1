@@ -67,6 +67,18 @@ public class MineSweeper {
         return flagUpCount;
     }
 
+    public boolean getgameEnd() {
+        return gameEnd;
+    }
+
+    public int getnumberOfBombs() {
+        return numberOfBombs;
+    }
+
+    public int getnumberOfTiles() {
+        return numberOfTiles;
+    }
+
     // TODO:削除するかしないか決める
     private void debug(boolean detable, boolean derevealed, boolean deflags) {
         String tb = "";
@@ -97,9 +109,9 @@ public class MineSweeper {
     }
 
     // ボードの初期化
-    void initTable() {
+    void initTable(int i, int j) {
         // 仕様1:ゲーム開始時に，盤面にランダムに地雷を設置する
-        setBombs(); // 地雷の設置
+        setBombs(i, j); // 地雷の設置
         // ここから実装:盤面を初期化する．
 
         for (int y = 0; y < height; y++) {
@@ -114,7 +126,7 @@ public class MineSweeper {
 
     }
 
-    void setBombs() {
+    void setBombs(int i, int j) {
         // ここから実装:盤面に地雷をセットする．
         // セットする地雷の数はMineSweeperのインスタンスを生成する際に引数numberOfBombsとして設定されている．
         Random rand = new Random();
@@ -130,6 +142,13 @@ public class MineSweeper {
         while (bombsPlaced < numberOfBombs) {
             int x = rand.nextInt(width);
             int y = rand.nextInt(height);
+
+            // (i, j) の周囲3x3マスに(x, y)が含まれる場合はスキップ
+            // 最初のクリック時そのマスが0になるまで初期化する TODO:レポートに書く
+            if (Math.abs(x - i) <= 1 && Math.abs(y - j) <= 1) {
+                continue;
+            }
+
             if (table[y][x] != -1) {
 
                 table[y][x] = -1;
@@ -165,10 +184,7 @@ public class MineSweeper {
         if (!gameEnd) { // ゲーム終了後クリック無反応にする
             if (x >= 0 && x < width && y >= 0 && y < height && !revealed[y][x] && !flags[y][x]) {
                 if (firstClick) {
-                    initTable();
-                    while (table[y][x] != 0) {// 最初のクリック時そのマスが0になるまで初期化する
-                        initTable();
-                    }
+                    initTable(x, y);
                     firstClick = false;
                 }
 
@@ -178,20 +194,20 @@ public class MineSweeper {
                     gui.lose(); // 地雷をクリックしたら敗北
                     openAllTiles(gui); // 全てのタイルをオープンして地雷を表示
                 } else if (table[y][x] == 0) {
-
-                    gui.setTextToTile(x, y, 0, false);// 0の場合も表示
                     openTilesCount++;
+                    gui.setTextToTile(x, y, 0, false);// 0の場合も表示
+
                     openAdjacentTiles(x, y, gui); // 周囲のタイルを再帰的にオープン
                 } else {
-
-                    gui.setTextToTile(x, y, table[y][x], false); // タイルに地雷数を表示
                     openTilesCount++;
+                    gui.setTextToTile(x, y, table[y][x], false); // タイルに地雷数を表示
+
                 }
             }
             debug(true, true, true);
             if (numberOfTiles - openTilesCount == numberOfBombs) {// 残りタイル枚数と地雷枚数が同じだった場合勝利
                 this.gameEnd = true;
-                gui.win();
+                gui.win(); // 勝利!!!
                 openAllTiles(gui); // 全てのタイルをオープンして地雷を表示
             }
         }
@@ -205,14 +221,14 @@ public class MineSweeper {
 
                     revealed[j][i] = true;
                     if (table[j][i] == 0) {
-
-                        gui.setTextToTile(i, j, 0, false);// 0の場合も表示
                         openTilesCount++;
+                        gui.setTextToTile(i, j, 0, false);// 0の場合も表示
+
                         openAdjacentTiles(i, j, gui);
                     } else if (table[j][i] != -1) {
-
-                        gui.setTextToTile(i, j, table[j][i], false);
                         openTilesCount++;
+                        gui.setTextToTile(i, j, table[j][i], false);
+
                     }
                 }
             }
@@ -228,15 +244,15 @@ public class MineSweeper {
                     return;
                 }
                 if (!this.flags[y][x]) {
-
-                    gui.setTextToTile(x, y, -2, true); // タイルにフラグを表示
                     this.flags[y][x] = true;
                     this.flagUpCount++;
-                } else {
+                    gui.setTextToTile(x, y, -2, true); // タイルにフラグを表示
 
-                    gui.setTextToTile(x, y, -2, false); // フラグを削除
+                } else {
                     this.flags[y][x] = false;
                     this.flagUpCount--;
+                    gui.setTextToTile(x, y, -2, false); // フラグを削除
+
                 }
             }
             debug(true, true, true);
@@ -259,7 +275,6 @@ public class MineSweeper {
                 }
                 if (table[y][x] == -1) {
 
-                    // gui.setTextToTile(x, y, viewaddflags + "★");// 爆弾の表記
                     gui.setTextToTile(x, y, -1, viewaddflags);
                 } else {
 

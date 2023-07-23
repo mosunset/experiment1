@@ -29,7 +29,7 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
         new Main();
     }
 
-    private void init() {
+    private void init() { // ボタン配置＆画面フレームの初期化
         this.tileTable = new Button[ms.getHeight()][ms.getWidth()];
         this.addWindowListener(this);
         this.setLayout(new GridLayout(ms.getHeight(), ms.getWidth()));
@@ -44,6 +44,7 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
             }
         }
         this.setSize(50 * ms.getWidth(), 50 * ms.getHeight());
+        this.setLocationRelativeTo(null);
         this.setVisible(true);
     }
 
@@ -83,12 +84,39 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
     }
 
     @Override
-    public void setTextToTile(int x, int y, String text) {
-        this.tileTable[y][x].setLabel(text);
+    public void setTextToTile(int x, int y, int tableconfig, boolean flag) {
+        if (tableconfig == -2) { // ゲーム中 フラグの設定のみの場合
+            setFlagToTile(x, y, flag);
+            return;
+        } else if (tableconfig == -1) {// ゲーム終了 爆弾の時
+            setBombToTile(x, y, flag);
+        } else if (tableconfig != 0) {// ゲーム中 ゲーム終了 マスクリック時
+            this.tileTable[y][x].setLabel(Integer.toString(tableconfig));
+        }
+        tilecolor(x, y);
+    }
 
+    private void setFlagToTile(int x, int y, boolean flag) {
+        if (flag) {
+            this.tileTable[y][x].setLabel("▼");
+        } else {
+            this.tileTable[y][x].setLabel("");
+        }
+
+    }
+
+    private void setBombToTile(int x, int y, boolean flag) {
+        if (flag) {
+            this.tileTable[y][x].setLabel("★");
+        } else {
+            this.tileTable[y][x].setLabel("☆");
+        }
+
+    }
+
+    private void tilecolor(int x, int y) {
         // ボタン無効化
         // this.tileTable[y][x].setEnabled(false);
-
         // ボタン背景色
         this.tileTable[y][x].setBackground(Color.gray);
         this.tileTable[y][x].setForeground(getBackground());
@@ -167,9 +195,10 @@ class ResultDialog extends Dialog {
     Label label;
     Button btn;
 
-    public ResultDialog(Frame owner, String title) {
+    public ResultDialog(Frame owner, String title) {// 結果表示ダイアログの設定
         super(owner, title);
         setLayout(new GridLayout(2, 1));
+        setLocationRelativeTo(null);
         Panel p1 = new Panel();
         label = new Label();
         p1.add(label);
@@ -209,7 +238,7 @@ class ResultDialog extends Dialog {
     }
 
     public void showDialog(String message) {
-        Panel p1 = new Panel();
+        // Panel p1 = new Panel();
         this.label.setText(message);
         this.setVisible(true);
     }

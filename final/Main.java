@@ -96,7 +96,6 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
                 }catch(NumberFormatException ex){
                     resultDialog.showDialog("整数のみを入力してください");
                 } catch (Exception ex) {
-                    System.out.println(ex);
                     resultDialog.showDialog("整数のみを入力してください([4-50],[1-" + (num1 * num1 - 10) + "])");
                 }
 

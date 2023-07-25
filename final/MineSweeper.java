@@ -123,8 +123,6 @@ public class MineSweeper {
                 }
             }
         }
-        // debug(true, true, true);
-
     }
 
     void setBombs(int i, int j) {

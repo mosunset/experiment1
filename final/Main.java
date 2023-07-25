@@ -19,11 +19,28 @@ import java.util.Random;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
+/*
+TODO:KUT WORKSTATION
+javac --version
+javac 11.0.17
+
+java --version
+openjdk 11.0.17 2022-10-18
+OpenJDK Runtime Environment (build 11.0.17+8-post-Ubuntu-1ubuntu220.04)
+OpenJDK 64-Bit Server VM (build 11.0.17+8-post-Ubuntu-1ubuntu220.04, mixed mode, sharing)
+*/
+
+/*
+TODO:HOME PC
+
+ */
+
 public class Main extends Frame implements WindowListener, MineSweeperGUI {
 
     private MineSweeper ms;
     private Button[][] tileTable;
     private static final Font f = new Font("serif", Font.BOLD, 20);
+    private static final Font t = new Font("serif", Font.ITALIC, 16);
     private final ResultDialog resultDialog = new ResultDialog(this, "Result");
 
     private Label text;
@@ -60,7 +77,7 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
         p2.setSize(50 * ms.getWidth(), 50 * ms.getHeight());
 
         Panel p3 = new Panel();
-        p3.setSize(50 * ms.getWidth(), 50);
+        p3.setSize(50 * ms.getWidth(), 70);
         // p3.setLayout(new BorderLayout());
 
         Panel p4 = new Panel();
@@ -134,9 +151,9 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
             }
         }
 
-        text = new Label("         \\\\ Enjoy This Game!! //         ", Label.CENTER);
-        text.setSize(50 * ms.getWidth(), 50);
-        text.setFont(f);
+        text = new Label("地雷原にようこそ！マインスイーパーの世界を楽しみましょう！", Label.CENTER);
+        text.setSize(50 * ms.getWidth(), 70);
+        text.setFont(t);
 
         p1.add(btn);
         p1.add(p4);
@@ -148,7 +165,7 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
         this.add("North", p1);
         this.add("Center", p2);
         this.add("South", p3);
-        this.setSize(50 * ms.getWidth(), 50 * ms.getHeight() + 100);
+        this.setSize(50 * ms.getWidth(), 50 * ms.getHeight() + 120);
         this.setLocationRelativeTo(null);// 画面中央配置
         this.setResizable(false);// 最大化ボタン無効
         this.setVisible(true);
@@ -233,38 +250,39 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
     }
 
     private void tilenumbercolor(int x, int y, int num) {
-        Color font;
+        final int fontColors[][] = { { 0, 0, 255 }, { 0, 255, 0 }, { 255, 0, 0 }, { 33, 58, 112 }, { 115, 78, 48 },
+                { 0, 140, 243 }, { 0, 0, 0 }, { 107, 107, 107 } };
+        Color fontColor;
         // ボタン文字色
-        switch (num) {
-            case 1:
-                font = new Color(0, 0, 255);// 青
-                break;
-            case 2:
-                font = new Color(0, 255, 0);// 緑
-                break;
-            case 3:
-                font = new Color(255, 0, 0);// 赤
-                break;
-            case 4:
-                font = new Color(33, 58, 112);// 紺
-                break;
-            case 5:
-                font = new Color(115, 78, 48);// 茶
-                break;
-            case 6:
-                font = new Color(0, 140, 243);// シアン
-                break;
-            case 7:
-                font = new Color(0, 0, 0);// 黒色
-                break;
-            case 8:
-                font = new Color(107, 107, 107);// 灰色
-                break;
-            default:
-                font = getBackground();
-                break;
+        if (1 <= num && num <= 8) {
+            int temp = num - 1;
+            fontColor = new Color(fontColors[temp][0], fontColors[temp][1], fontColors[temp][2]);
+        } else {
+            fontColor = this.getBackground();
         }
-        this.tileTable[y][x].setForeground(font);
+
+        this.tileTable[y][x].setForeground(fontColor);
+    }
+
+    @Override
+    public void setTextTolabel(int tileconfig) {
+        String randtexts[] = { "チカチカする数字が近くにあります。うまくタイルを開けてください！", "新しい情報を手に入れました！それを利用して地雷の位置を特定しましょう！",
+                "周囲のタイルを確認して、地雷の可能性を排除しましょう！" };
+        String bombtexts[] = { "WoW 爆弾が爆発してしまいました。慎重に探索しましょう！", "爆弾が爆発してしまいました！注意が足りなかったようです。",
+                "大変！爆弾が爆発したようです。気をつけて次に進みましょう。" };
+        String rasttexts[] = { "あと少しで地雷をすべて除去できます。最後まで踏ん張ってください！", "あと少しでゲームクリアです！頑張ってください！",
+                "あなたの探索が報われますよ！クリアまであとわずかです！" };
+        Random rand = new Random();
+        String temp;
+        if (tileconfig == -1) {
+            temp = bombtexts[rand.nextInt(bombtexts.length)];
+        } else if ((ms.getnumberOfTiles() - ms.getOpenTilesCount()) <= ms.getnumberOfBombs()*1.5) {
+            temp = rasttexts[rand.nextInt(rasttexts.length)];
+        } else {
+            temp = randtexts[rand.nextInt(randtexts.length)];
+        }
+
+        text.setText(temp);
     }
 
     @Override

@@ -5,6 +5,8 @@ interface MineSweeperGUI {
     public void setTextToTile(int x, int y, int tableconfig, boolean flag);// タイル(ボタン)のテキストを設定する
     // tableconfig:-2 フラグ設定用
 
+    public void setTextTolabel(int tileconfig);// ゲーム中表示される文章を変更する
+
     public void win();// ゲーム勝利時の処理
 
     public void lose(); // ゲーム敗北時の処理
@@ -105,7 +107,7 @@ public class MineSweeper {
             }
             System.out.println();
         }
-        System.out.printf("\n↑%3d------------open%3d,flag%3d\n", debugcount++, openTilesCount, flagUpCount);
+        System.out.printf("\n↑%3d------------open:%3d, flag:%3d\n", debugcount++, openTilesCount, flagUpCount);
     }
 
     // ボードの初期化
@@ -178,8 +180,8 @@ public class MineSweeper {
         // ここから実装:パネルを左クリックした際に実行される．
         // 仕様2:パネルを左クリックした際，パネルを開く
         // 仕様3 パネルを開いた時，そのパネルに地雷が隠されていれば全てのパネルを開く．
-        // TODO:仕様4-2:旗が立てられたパネルは，旗が取り除かれるまで左クリックで開けない．
-        // TODO:仕様5:ゲームクリアもしくはゲームオーバーになった際，適切なダイアログを表示する.
+        // 仕様4-2:旗が立てられたパネルは，旗が取り除かれるまで左クリックで開けない．
+        // 仕様5:ゲームクリアもしくはゲームオーバーになった際，適切なダイアログを表示する.
 
         if (!gameEnd) { // ゲーム終了後クリック無反応にする
             if (x >= 0 && x < width && y >= 0 && y < height && !revealed[y][x] && !flags[y][x]) {
@@ -201,10 +203,17 @@ public class MineSweeper {
                 } else {
                     openTilesCount++;
                     gui.setTextToTile(x, y, table[y][x], false); // タイルに地雷数を表示
-
                 }
+
+                if(!gameEnd && table[y][x] != -1){
+                    gui.setTextTolabel(table[y][x]);// labelテキストの変更
+                }else{
+                    gui.setTextTolabel(table[y][x]);// labelテキストの変更
+                }
+                
             }
             debug(true, true, true);
+            
             if (numberOfTiles - openTilesCount == numberOfBombs) {// 残りタイル枚数と地雷枚数が同じだった場合勝利
                 this.gameEnd = true;
                 gui.win(); // 勝利!!!
@@ -237,7 +246,7 @@ public class MineSweeper {
 
     public void setFlag(int x, int y, MineSweeperGUI gui) {
         // ここから実装:パネルを右クリックした際に実行される．
-        // TODO:仕様4-1:開かれていないパネルを右クリックした際，そのパネルに旗を立てる/取り除く
+        // 仕様4-1:開かれていないパネルを右クリックした際，そのパネルに旗を立てる/取り除く
         if (!gameEnd) { // ゲーム終了後クリック無反応にする
             if (x >= 0 && x < width && y >= 0 && y < height && !revealed[y][x]) {
                 if (firstClick) {
@@ -259,8 +268,7 @@ public class MineSweeper {
         }
     }
 
-    // TODO:public から private に変更して提出すること
-    public void openAllTiles(MineSweeperGUI gui) {
+    private void openAllTiles(MineSweeperGUI gui) {
         // ここから実装:全てのパネルを開く．
         Boolean viewaddflags = false;
         for (int y = 0; y < height; y++) {

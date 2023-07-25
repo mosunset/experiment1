@@ -82,10 +82,8 @@ public class MineSweeper {
     }
 
     // TODO:削除するかしないか決める
-    private void debug(boolean detable, boolean derevealed, boolean deflags) {
-        String tb = "";
-        String re = "";
-        String fg = "";
+    private void debug() {
+        String tb, re, fg;
         for (int y = 0; y < height; y++) {
             for (int x = 0; x < width; x++) {
                 if (table[y][x] == -1) {
@@ -116,15 +114,16 @@ public class MineSweeper {
         setBombs(i, j); // 地雷の設置
         // ここから実装:盤面を初期化する．
 
-        for (int y = 0; y < height; y++) {
+        for (int y = 0; y < height; y++) {// すべてのマスをチェック
             for (int x = 0; x < width; x++) {
-                if (table[y][x] != -1) {
+                if (table[y][x] != -1) {// 爆弾じゃないとき
 
                     int count = countAdjacentBombs(x, y); // 周囲の地雷数をカウント
                     table[y][x] = count; // ボードの該当位置に周囲の地雷数を設定
                 }
             }
         }
+        // debug(true, true, true);
 
     }
 
@@ -162,11 +161,11 @@ public class MineSweeper {
     // タイルの周囲にある地雷の数をカウントする
     private int countAdjacentBombs(int x, int y) {
         int count = 0;
-        for (int j = y - 1; j <= y + 1; j++) {
+        for (int j = y - 1; j <= y + 1; j++) {// 周囲をチェック
             for (int i = x - 1; i <= x + 1; i++) {
-                if (i >= 0 && i < width && j >= 0 && j < height) {
+                if (i >= 0 && i < width && j >= 0 && j < height) {// エラー箇所を排除
 
-                    if (table[j][i] == -1) {
+                    if (table[j][i] == -1) {// 爆弾だったとき
 
                         count++;
                     }
@@ -183,50 +182,55 @@ public class MineSweeper {
         // 仕様4-2:旗が立てられたパネルは，旗が取り除かれるまで左クリックで開けない．
         // 仕様5:ゲームクリアもしくはゲームオーバーになった際，適切なダイアログを表示する.
 
-        if (!gameEnd) { // ゲーム終了後クリック無反応にする
-            if (x >= 0 && x < width && y >= 0 && y < height && !revealed[y][x] && !flags[y][x]) {
-                if (firstClick) {
-                    initTable(x, y);
-                    firstClick = false;
-                }
-
-                revealed[y][x] = true;
-                if (table[y][x] == -1) {
-                    this.gameEnd = true;
-                    gui.lose(); // 地雷をクリックしたら敗北
-                    openAllTiles(gui); // 全てのタイルをオープンして地雷を表示
-                } else if (table[y][x] == 0) {
-                    openTilesCount++;
-                    gui.setTextToTile(x, y, 0, false);// 0の場合も表示
-
-                    openAdjacentTiles(x, y, gui); // 周囲のタイルを再帰的にオープン
-                } else {
-                    openTilesCount++;
-                    gui.setTextToTile(x, y, table[y][x], false); // タイルに地雷数を表示
-                }
-
-                if(!gameEnd && table[y][x] != -1){
-                    gui.setTextTolabel(table[y][x]);// labelテキストの変更
-                }else{
-                    gui.setTextTolabel(table[y][x]);// labelテキストの変更
-                }
-                
-            }
-            debug(true, true, true);
-            
-            if (numberOfTiles - openTilesCount == numberOfBombs) {// 残りタイル枚数と地雷枚数が同じだった場合勝利
-                this.gameEnd = true;
-                gui.win(); // 勝利!!!
-                openAllTiles(gui); // 全てのタイルをオープンして地雷を表示
-            }
+        if (gameEnd) { // ゲーム終了後クリック無反応にする
+            return;
         }
+
+        if (x >= 0 && x < width && y >= 0 && y < height && !revealed[y][x] && !flags[y][x]) {
+            if (firstClick) {
+                initTable(x, y);
+                firstClick = false;
+            }
+
+            revealed[y][x] = true;
+            if (table[y][x] == -1) {
+                this.gameEnd = true;
+                gui.lose(); // 地雷をクリックしたら敗北
+                openAllTiles(gui); // 全てのタイルをオープンして地雷を表示
+            } else if (table[y][x] == 0) {
+                openTilesCount++;
+                gui.setTextToTile(x, y, 0, false);// 0の場合も表示
+
+                openAdjacentTiles(x, y, gui); // 周囲のタイルを再帰的にオープン
+            } else {
+                openTilesCount++;
+                gui.setTextToTile(x, y, table[y][x], false); // タイルに地雷数を表示
+            }
+
+            if (!gameEnd && table[y][x] != -1) {
+                gui.setTextTolabel(table[y][x]);// labelテキストの変更
+            } else {
+                gui.setTextTolabel(table[y][x]);// labelテキストの変更
+            }
+
+        }
+        debug();
+
+        if (numberOfTiles - openTilesCount == numberOfBombs) {// 残りタイル枚数と地雷枚数が同じだった場合勝利
+            this.gameEnd = true;
+            gui.win(); // 勝利!!!
+            openAllTiles(gui); // 全てのタイルをオープンして地雷を表示
+        }
+
     }
 
     // タイルの周囲のタイルを再帰的にオープンする
     private void openAdjacentTiles(int x, int y, MineSweeperGUI gui) {
         for (int j = y - 1; j <= y + 1; j++) {
             for (int i = x - 1; i <= x + 1; i++) {
-                if (i >= 0 && i < width && j >= 0 && j < height && !revealed[j][i] && !flags[j][i]) {// TODO:自動で開く時のフラグの関係をどうするかレポートに書く(!flags[j][i])の部分
+
+                // TODO:自動で開く時のフラグの関係をどうするかレポートに書く(!flags[j][i])の部分
+                if (i >= 0 && i < width && j >= 0 && j < height && !revealed[j][i] && !flags[j][i]) {
 
                     revealed[j][i] = true;
                     if (table[j][i] == 0) {
@@ -247,25 +251,26 @@ public class MineSweeper {
     public void setFlag(int x, int y, MineSweeperGUI gui) {
         // ここから実装:パネルを右クリックした際に実行される．
         // 仕様4-1:開かれていないパネルを右クリックした際，そのパネルに旗を立てる/取り除く
-        if (!gameEnd) { // ゲーム終了後クリック無反応にする
-            if (x >= 0 && x < width && y >= 0 && y < height && !revealed[y][x]) {
-                if (firstClick) {
-                    return;
-                }
-                if (!this.flags[y][x]) {
-                    this.flags[y][x] = true;
-                    this.flagUpCount++;
-                    gui.setTextToTile(x, y, -2, true); // タイルにフラグを表示
-
-                } else {
-                    this.flags[y][x] = false;
-                    this.flagUpCount--;
-                    gui.setTextToTile(x, y, -2, false); // フラグを削除
-
-                }
-            }
-            debug(true, true, true);
+        if (gameEnd) { // ゲーム終了後クリック無反応にする
+            return;
         }
+        if (x >= 0 && x < width && y >= 0 && y < height && !revealed[y][x]) {
+            if (firstClick) {
+                return;
+            }
+            if (!this.flags[y][x]) {
+                this.flags[y][x] = true;
+                this.flagUpCount++;
+                gui.setTextToTile(x, y, -2, true); // タイルにフラグを表示
+
+            } else {
+                this.flags[y][x] = false;
+                this.flagUpCount--;
+                gui.setTextToTile(x, y, -2, false); // フラグを削除
+
+            }
+        }
+        debug();
     }
 
     private void openAllTiles(MineSweeperGUI gui) {

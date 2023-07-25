@@ -150,8 +150,7 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
                 p2.add(tile);
             }
         }
-
-        text = new Label("地雷原にようこそ！マインスイーパーの世界を楽しみましょう！", Label.CENTER);
+        text = new Label("地雷原にようこそ！\nマインスイーパーの世界を楽しみましょう！", Label.CENTER);
         text.setSize(50 * ms.getWidth(), 70);
         text.setFont(t);
 

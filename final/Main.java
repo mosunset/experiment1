@@ -40,7 +40,7 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
     private MineSweeper ms;
     private Button[][] tileTable;
     private static final Font f = new Font("serif", Font.BOLD, 20);
-    private static final Font t = new Font("serif", Font.ITALIC, 16);
+    private static final Font t = new Font("serif", 0, 16);
     private final ResultDialog resultDialog = new ResultDialog(this, "Result");
 
     private Label text;
@@ -83,9 +83,13 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
         Panel p4 = new Panel();
         Panel p5 = new Panel();
 
-        Label text1 = new Label("マス:");
+        // Label text1 = new Label("マス:");
         TextField textField1 = new TextField(Integer.toString(ms.getHeight()), 5);
-        p4.add(text1);
+        TextField textField3 = new TextField(Integer.toString(ms.getWidth()), 5);
+        Label x = new Label("X:Y");
+        // p4.add(text1);
+        p4.add(textField3);
+        p4.add(x);
         p4.add(textField1);
 
         Label text2 = new Label("爆弾:");
@@ -101,19 +105,22 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
             @Override
             public void mouseClicked(MouseEvent e) {
                 int num1 = 9;
+                int num2 = 10;
+                int num3 = 9;
                 try {
                     num1 = Integer.parseInt(textField1.getText());
-                    int num2 = Integer.parseInt(textField2.getText());
-                    if (50 >= num1 && num1 >= 4 && num1 * num1 - 10 > num2 && num2 >= 1) {
+                    num2 = Integer.parseInt(textField2.getText());
+                    num3 = Integer.parseInt(textField3.getText());
+                    if (50 >= num1 && num1 >= 4 && 50 >= num3 && num3 >= 4 && num1 * num3 - 10 >= num2 && num2 >= 1) {
                         pear.setVisible(false);
-                        new Main(num1, num1, num2);
+                        new Main(num1, num3, num2);
                     } else {
                         throw new Exception();
                     }
                 } catch (NumberFormatException ex) {
                     resultDialog.showDialog("整数のみを入力してください");
                 } catch (Exception ex) {
-                    resultDialog.showDialog("整数のみを入力してください([4-50],[1-" + (num1 * num1 - 10) + "])");
+                    resultDialog.showDialog("整数のみを入力してください\n([4-50],[1-" + (num1 * num3 - 10) + "])");
                 }
 
             }
@@ -275,7 +282,7 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
         String temp;
         if (tileconfig == -1) {
             temp = bombtexts[rand.nextInt(bombtexts.length)];
-        } else if ((ms.getnumberOfTiles() - ms.getOpenTilesCount()) <= ms.getnumberOfBombs()*1.5) {
+        } else if ((ms.getnumberOfTiles() - ms.getOpenTilesCount()) <= ms.getnumberOfBombs() * 1.5) {
             temp = rasttexts[rand.nextInt(rasttexts.length)];
         } else {
             temp = randtexts[rand.nextInt(randtexts.length)];
@@ -365,6 +372,8 @@ class ResultDialog extends Dialog {
         setLocationRelativeTo(null);
         Panel p1 = new Panel();
         label = new Label();
+        label.setFont(new Font("serif", Font.BOLD, 20));
+        label.setSize(350,150);
         p1.add(label);
         this.add(p1);
         this.setSize(350, 200);

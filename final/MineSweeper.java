@@ -286,13 +286,9 @@ public class MineSweeper {
 
                     viewaddflags = false;
                 }
-                if (table[y][x] == -1) {
 
-                    gui.setTextToTile(x, y, -1, viewaddflags);
-                } else {
+                gui.setTextToTile(x, y, table[y][x], viewaddflags);
 
-                    gui.setTextToTile(x, y, table[y][x], viewaddflags);
-                }
             }
         }
     }

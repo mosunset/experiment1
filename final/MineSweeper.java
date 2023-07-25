@@ -149,7 +149,6 @@ public class MineSweeper {
             }
 
             if (table[y][x] != -1) {
-
                 table[y][x] = -1;
                 bombsPlaced++;
             }

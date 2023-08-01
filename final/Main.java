@@ -84,8 +84,8 @@ public class Main extends Frame implements WindowListener, MineSweeperGUI {
         Panel p5 = new Panel();
 
         // Label text1 = new Label("マス:");
-        TextField textField1 = new TextField(Integer.toString(ms.getHeight()), 5);
-        TextField textField3 = new TextField(Integer.toString(ms.getWidth()), 5);
+        TextField textField1 = new TextField(Integer.toString(ms.getHeight()), 1);
+        TextField textField3 = new TextField(Integer.toString(ms.getWidth()), 1);
         Label x = new Label("X:Y");
         // p4.add(text1);
         p4.add(textField3);
